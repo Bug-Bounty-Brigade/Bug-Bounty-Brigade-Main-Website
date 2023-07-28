@@ -2,21 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root{
+  @apply text-white
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components{
+  .icon-style{
+    @apply text-[#EEB33B] bg-[#6C5B3F] w-12 h-12 rounded-full p-[6px] box-border
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: #2f2c29;
 }
