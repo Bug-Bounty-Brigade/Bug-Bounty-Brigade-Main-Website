@@ -8,7 +8,7 @@ interface Children {
 
 const PageLayout: React.FC<Children> = ({ children }) => {
   return (
-    <div className="min-h-screen w-screen px-[84px] bg-[#2E2C28]">
+    <div className="min-h-screen max-w-screen overflow-x-hidden px-[84px] bg-[#2E2C28]">
       <Navbar />
       {children}
       <Footer />

@@ -11,4 +11,26 @@
   .icon-style{
     @apply text-[#EEB33B] bg-[#6C5B3F] w-12 h-12 rounded-full p-[6px] box-border
   }
+  .neutral{
+    @apply text-[#E8EABB]
+  }
+
+  .bg-card{
+    @apply bg-[#40392F]
+  }
+
+  .btn{
+    @apply bg-[#EEB33B] text-black rounded-[100px]
+  }
+
+  .text-color{
+    @apply text-[#D3D3D3]
+  }
+}
+
+.heading{
+  background: var(--heading, radial-gradient(5034.74% 67.15% at 50.00% 44.83%, #E8EABC 0%, #EEB33B 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
