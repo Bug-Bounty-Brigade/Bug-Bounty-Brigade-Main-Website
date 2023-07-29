@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="flex flex-col py-12">
       <div className="bg-[#40392F] px-12 py-[40px] rounded-[24px]">
         <div className="w-full flex flex-col">
-          <div className="flex w-full justify-between">
+          <div className="flex flex-col md:flex-row gap-y-6 md:gap-y-0 w-full justify-between">
             <div className="flex gap-3 items-center">
               <Image
                 src="/mainlogo.png"

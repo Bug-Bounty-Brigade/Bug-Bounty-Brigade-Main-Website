@@ -60,13 +60,13 @@ export default function Home() {
           Unleash Your Cybersecurity Skills and Safeguard the Digital World with
           Bug Bounty Brigade
         </h1>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 gap-y-6 md:gap-y-0 md:grid-cols-2">
           <Image
             src="/heroImage.png"
             width={1000}
             height={1000}
             alt="person photo"
-            className="w-[90%] h-[26rem]"
+            className="w-full md:w-[90%] h-[26rem]"
           />
           <div className="flex flex-col gap-12">
             <p>
@@ -126,7 +126,7 @@ export default function Home() {
               Join the Bug Bounty Brigade Community
             </h2>
           </div>
-          <div className="grid grid-cols-4 justify-between gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-between gap-6">
             {iconGroup.map((icon, index) => (
               <div
                 key={index}
