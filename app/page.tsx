@@ -14,7 +14,7 @@ import {
 
 interface IconDetails {
   iconName: React.ReactNode;
-  link: String;
+  link: string;
 }
 
 const iconGroup: IconDetails[] = [
