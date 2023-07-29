@@ -55,7 +55,7 @@ const iconGroup: IconDetails[] = [
 export default function Home() {
   return (
     <PageLayout>
-      <main className="py-12 flex flex-col gap-12">
+      <main className="flex flex-col gap-12 py-12">
         <h1 className="flex heading font-[700] text-[48px]">
           Unleash Your Cybersecurity Skills and Safeguard the Digital World with
           Bug Bounty Brigade
@@ -86,7 +86,7 @@ export default function Home() {
                 <h2>Community members</h2>
               </div>
               <hr className="rotate-180 border border-[#6C5B3F] h-full " />
-              <div className="flex gap-4 items-center">
+              <div className="flex items-center gap-4">
                 <Image
                   src="/teamphoto.png"
                   width={1000}
@@ -126,13 +126,13 @@ export default function Home() {
               Join the Bug Bounty Brigade Community
             </h2>
           </div>
-          <div className="grid grid-cols-4 justify-between gap-6">
+          <div className="grid justify-between grid-cols-4 gap-6">
             {iconGroup.map((icon, index) => (
               <div
                 key={index}
                 className="bg-card flex items-center w-full px-[66px] pt-[88px] rounded-[24px] pb-6"
               >
-                <div className="flex gap-20 flex-col mx-auto ">
+                <div className="flex flex-col gap-20 mx-auto ">
                   <div className="text-[#EEB33B] flex items-center text-center w-fit mx-auto">
                     {icon.iconName}
                   </div>
@@ -169,8 +169,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="grid grid-cols-2 gap-6
-            "
+              className="grid grid-cols-2 gap-6 "
             >
               {/* Cards Here */}
               <div className="flex flex-grow w-full">
