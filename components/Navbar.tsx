@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex py-4">
-      <nav className="w-full flex px-[10px] rounded-[100px] py-4 bg-[#40392F]">
+      <nav className="w-full flex px-[10px] rounded-[100px] py-2 md:py-4 bg-[#40392F]">
         <div className="flex w-full">
           <div className="flex w-full items-center justify-between">
             <div className="flex gap-3 items-center">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 Bug Bounty Brigade
               </h2>
             </div>
-            <ul className="flex gap-16 items-center">
+            <ul className="hidden lg:flex gap-16 items-center">
               <Link href="/" className={pathname === "/" ? active : ""}>
                 Home
               </Link>

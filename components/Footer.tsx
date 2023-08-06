@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col py-12">
+    <footer className="flex w-[90%] md:w-full mx-auto flex-col py-12">
       <div className="bg-[#40392F] px-12 py-[40px] rounded-[24px]">
         <div className="w-full flex flex-col">
           <div className="flex flex-col md:flex-row gap-y-6 md:gap-y-0 w-full justify-between">
@@ -30,7 +30,7 @@ const Footer = () => {
                 Bug Bounty Brigade
               </h2>
             </div>
-            <div className="flex gap-2">
+            <div className="grid grid-cols-4 gap-6 md:grid-cols-3 lg:grid-cols-8">
               <BsDiscord className="icon-style" />
               <BsGithub className="icon-style" />
               <BsTwitter className="icon-style" />
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="my-5 border border-[#6C5B3F]" />
-          <div className="flex w-full justify-between">
+          <div className="flex flex-col md:flex-row gap-4 w-full justify-between">
             <p>© 2023 Bug Bounty Brigade All Rights Reserved</p>
             <button className="py-[12px] font-[400] px-[40px] rounded-full text-black bg-[#EEB33B]">
               Join our community

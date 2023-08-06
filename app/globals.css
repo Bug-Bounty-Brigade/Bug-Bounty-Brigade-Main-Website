@@ -9,7 +9,7 @@
 
 @layer components{
   .icon-style{
-    @apply text-[#EEB33B] bg-[#6C5B3F] w-12 h-12 rounded-full p-[6px] box-border
+    @apply text-[#EEB33B] bg-[#6C5B3F] w-10 h-10 lg:w-12 lg:h-12 rounded-full p-[6px] box-border
   }
   .neutral{
     @apply text-[#E8EABB]
