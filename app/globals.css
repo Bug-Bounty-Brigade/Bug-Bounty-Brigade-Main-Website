@@ -34,3 +34,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+body{
+  background: #2E2C28;
+}
