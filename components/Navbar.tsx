@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -27,6 +28,7 @@ const Navbar = () => {
                 Bug Bounty Brigade
               </h2>
             </div>
+            <MobileMenu className="lg:hidden" />
             <ul className="hidden lg:flex gap-16 items-center">
               <Link href="/" className={pathname === "/" ? active : ""}>
                 Home

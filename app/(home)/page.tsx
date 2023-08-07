@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <PageLayout>
       <main className="flex flex-col gap-12 py-12">
-        <h1 className="flex heading font-[700] text-3xl lg:text-[48px]">
+        <h1 className="flex heading font-[700] text-[1.2rem] lg:text-[48px]">
           Unleash Your Cybersecurity Skills and Safeguard the Digital World with
           Bug Bounty Brigade
         </h1>
@@ -81,7 +81,7 @@ export default function Home() {
               <FiArrowUpRight />
             </button>
             <div className="flex w-full gap-[30px]">
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col md:flex-row items-center gap-4">
                 <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
                 <h2>Community members</h2>
               </div>
@@ -103,10 +103,10 @@ export default function Home() {
         <div className="py-12">
           <div className="bg-card flex flex-col px-[84px] py-[40px]">
             <p className="text-center">About us</p>
-            <h2 className="heading mt-3 font-[700] text-[36px] text-center">
+            <h2 className="heading mt-3 font-[700] text-[24px] md:text-[36px] text-center">
               Empowering Security through Collaboration
             </h2>
-            <p className="text-center mt-6 font-[18px] text-color">
+            <p className="text-center mt-6 font-[22px] md:font-[18px] text-color">
               Bug Bounty Brigade is a vibrant community of cybersecurity
               professionals and ethical hackers dedicated to enhancing the
               security of digital systems. Our mission is to cultivate a
