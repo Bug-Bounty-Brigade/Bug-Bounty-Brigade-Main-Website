@@ -56,17 +56,17 @@ export default function Home() {
   return (
     <PageLayout>
       <main className="flex flex-col gap-12 py-12">
-        <h1 className="flex heading font-[700] text-[48px]">
+        <h1 className="flex heading font-[700] text-[1.2rem] lg:text-[48px]">
           Unleash Your Cybersecurity Skills and Safeguard the Digital World with
           Bug Bounty Brigade
         </h1>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 gap-y-6 lg:gap-y-0 lg:grid-cols-2">
           <Image
             src="/heroImage.png"
             width={1000}
             height={1000}
             alt="person photo"
-            className="w-[90%] h-[26rem]"
+            className="w-full lg:w-[90%] h-[26rem]"
           />
           <div className="flex flex-col gap-12">
             <p>
@@ -81,7 +81,7 @@ export default function Home() {
               <FiArrowUpRight />
             </button>
             <div className="flex w-full gap-[30px]">
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col md:flex-row items-center gap-4">
                 <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
                 <h2>Community members</h2>
               </div>
@@ -103,10 +103,10 @@ export default function Home() {
         <div className="py-12">
           <div className="bg-card flex flex-col px-[84px] py-[40px]">
             <p className="text-center">About us</p>
-            <h2 className="heading mt-3 font-[700] text-[36px] text-center">
+            <h2 className="heading mt-3 font-[700] text-[24px] md:text-[36px] text-center">
               Empowering Security through Collaboration
             </h2>
-            <p className="text-center mt-6 font-[18px] text-color">
+            <p className="text-center mt-6 font-[22px] md:font-[18px] text-color">
               Bug Bounty Brigade is a vibrant community of cybersecurity
               professionals and ethical hackers dedicated to enhancing the
               security of digital systems. Our mission is to cultivate a
@@ -126,7 +126,7 @@ export default function Home() {
               Join the Bug Bounty Brigade Community
             </h2>
           </div>
-          <div className="grid justify-between grid-cols-4 gap-6">
+          <div className="grid justify-center md:justify-between gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {iconGroup.map((icon, index) => (
               <div
                 key={index}
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col py-[40px]">
           <div className="flex flex-col gap-12">
-            <div className="flex">
+            <div className="flex flex-col md:flex-row items-center md:items-start">
               <div className="flex flex-col w-[90%]">
                 <div className="flex flex-col w-[90%]">
                   <p>Blog</p>
@@ -168,9 +168,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div
-              className="grid grid-cols-2 gap-6 "
-            >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
               {/* Cards Here */}
               <div className="flex flex-grow w-full">
                 <div className="bg-card w-full flex flex-col justify-between rounded-[24px] p-6">
@@ -219,8 +217,8 @@ export default function Home() {
                     className="w-[14.5rem] h-[10rem] rounded-[20px]"
                   />
                 </div>
-                <div className="flex gap-6">
-                  <div className="flex bg-card rounded-[20px] p-6">
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="flex flex-col md:flex-row bg-card rounded-[20px] p-6">
                     <div className="flex flex-col gap-4 w-[80%]">
                       <h2 className="text-[24px] neutral">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit

@@ -64,11 +64,11 @@ const events: EventPosts[] = [
 const Events = () => {
   return (
     <PageLayout>
-      <header className="flex gap-12 w-full items-center">
-        <h2 className="heading font-[700] w-full text-[48px]">
+      <header className="flex flex-col md:flex-row gap-12 w-full items-center">
+        <h2 className="text-[30px] heading font-[700] w-full md:text-[48px]">
           Ignite Your Cybersecurity Journey with Our Events
         </h2>
-        <p className="text-[18px] font-[400] w-full text-color">
+        <p className="text-2xl md:text-[18px] font-[400] w-full text-color">
           Engage in captivating discussions, interactive workshops, and
           networking opportunities with industry experts. Ignite your
           cybersecurity journey by staying informed, connecting with like-minded
@@ -76,7 +76,7 @@ const Events = () => {
           community.
         </p>
       </header>
-      <div className="grid grid-cols-3 gap-x-6 gap-y-12 justify-stretch w-full py-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 justify-stretch w-full py-12">
         {events.map((event, index) => (
           <div
             key={index}
