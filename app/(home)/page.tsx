@@ -20,7 +20,7 @@ interface IconDetails {
 const iconGroup: IconDetails[] = [
   {
     iconName: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://discord.gg/N73nyWdj",
   },
   {
     iconName: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,

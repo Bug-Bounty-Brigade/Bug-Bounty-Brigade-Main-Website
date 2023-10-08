@@ -31,7 +31,7 @@ const Footer = () => {
               </h2>
             </div>
             <div className="grid grid-cols-4 gap-6 md:grid-cols-3 lg:grid-cols-8">
-              <a href="#" target="_blank"><BsDiscord className="icon-style" /></a>
+              <a href="https://discord.gg/N73nyWdj" target="_blank"><BsDiscord className="icon-style" /></a>
               <a href="https://github.com/Bug-Bounty-Brigade" target="_blank"><BsGithub className="icon-style" /></a>
               <a href="https://twitter.com/BBB_GHC " target="_blank"><BsTwitter className="icon-style" /></a>
               <a href="https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U" target="_blank"><BsYoutube className="icon-style" /></a>
