@@ -7,7 +7,7 @@ import {
   BsGithub,
   BsTwitter,
   BsLinkedin,
-  BsFacebook,
+  BsWhatsapp,
   BsInstagram,
   BsYoutube,
 } from "react-icons/bs";
@@ -24,32 +24,33 @@ const iconGroup: IconDetails[] = [
   },
   {
     iconName: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://github.com/Bug-Bounty-Brigade",
   },
   {
     iconName: <BsTwitter className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://twitter.com/BBB_GHC",
   },
   {
     iconName: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
   },
   {
     iconName: <BsTelegram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://t.me/Resources6969",
   },
   {
     iconName: <BsLinkedin className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://www.linkedin.com/company/bug-bounty-brigade/",
   },
   {
     iconName: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
   },
   {
-    iconName: <BsFacebook className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    iconName: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
   },
+
 ];
 
 export default function Home() {
@@ -76,10 +77,10 @@ export default function Home() {
               potential threats.
             </p>
             <p> Are you ready to harness your skills and make a real impact?</p>
-            <button className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]">
+            <a className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
               <FiArrowUpRight />
-            </button>
+            </a>
             <div className="flex w-full gap-[30px]">
               <div className="flex flex-col md:flex-row items-center gap-4">
                 <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
@@ -128,9 +129,11 @@ export default function Home() {
           </div>
           <div className="grid justify-center md:justify-between gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {iconGroup.map((icon, index) => (
-              <div
+              <a
                 key={index}
                 className="bg-card flex items-center w-full px-[66px] pt-[88px] rounded-[24px] pb-6"
+                href={icon.link}
+                target="_blank"
               >
                 <div className="flex flex-col gap-20 mx-auto ">
                   <div className="text-[#EEB33B] flex items-center text-center w-fit mx-auto">
@@ -140,7 +143,7 @@ export default function Home() {
                     Join our community
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

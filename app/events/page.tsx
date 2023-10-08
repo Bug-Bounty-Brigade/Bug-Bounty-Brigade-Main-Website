@@ -94,9 +94,9 @@ const Events = () => {
             <p className="text-[18px] text-color">{event.description}</p>
             <p className="text-[18px] text-color">{event.description}</p>
             <p className="text-[18px] text-color">{event.attendeesCount}</p>
-            <button className="py-[12px] w-full font-[400] px-[40px] rounded-full text-black bg-[#EEB33B]">
+            <a className="py-[12px] w-full font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
-            </button>
+            </a>
           </div>
         ))}
       </div>
