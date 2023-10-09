@@ -6,7 +6,7 @@ import {
   BsGithub,
   BsTwitter,
   BsLinkedin,
-  BsFacebook,
+  BsWhatsapp,
   BsInstagram,
   BsYoutube,
 } from "react-icons/bs";
@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   return (
     <footer className="flex w-[90%] md:w-full mx-auto flex-col py-12">
-      <div className="bg-[#40392F] px-12 py-[40px] rounded-[24px]">
+      <div className="bg-[#40392F] px-6 sm:px-12 py-[40px] rounded-[24px]">
         <div className="w-full flex flex-col">
           <div className="flex flex-col md:flex-row gap-y-6 md:gap-y-0 w-full justify-between">
             <div className="flex gap-3 items-center">
@@ -31,22 +31,22 @@ const Footer = () => {
               </h2>
             </div>
             <div className="grid grid-cols-4 gap-6 md:grid-cols-3 lg:grid-cols-8">
-              <BsDiscord className="icon-style" />
-              <BsGithub className="icon-style" />
-              <BsTwitter className="icon-style" />
-              <BsYoutube className="icon-style" />
-              <BsTelegram className="icon-style" />
-              <BsLinkedin className="icon-style" />
-              <BsInstagram className="icon-style" />
-              <BsFacebook className="icon-style" />
+              <a href="https://discord.gg/N73nyWdj" target="_blank"><BsDiscord className="icon-style" /></a>
+              <a href="https://github.com/Bug-Bounty-Brigade" target="_blank"><BsGithub className="icon-style" /></a>
+              <a href="https://twitter.com/BBB_GHC " target="_blank"><BsTwitter className="icon-style" /></a>
+              <a href="https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U" target="_blank"><BsYoutube className="icon-style" /></a>
+              <a href="https://t.me/Resources6969" target="_blank"><BsTelegram className="icon-style" /></a>
+              <a href="https://www.linkedin.com/company/bug-bounty-brigade/" target="_blank"><BsLinkedin className="icon-style" /></a>
+              <a href="https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==" target="_blank"><BsInstagram className="icon-style" /></a>
+              <a href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank"><BsWhatsapp className="icon-style" /></a>
             </div>
           </div>
           <hr className="my-5 border border-[#6C5B3F]" />
           <div className="flex flex-col md:flex-row gap-4 w-full justify-between">
             <p>© 2023 Bug Bounty Brigade All Rights Reserved</p>
-            <button className="py-[12px] font-[400] px-[40px] rounded-full text-black bg-[#EEB33B]">
+            <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
-            </button>
+            </a>
           </div>
         </div>
       </div>

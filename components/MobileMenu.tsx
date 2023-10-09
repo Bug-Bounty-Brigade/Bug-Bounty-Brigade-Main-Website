@@ -2,6 +2,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { FaBars } from 'react-icons/fa'
 import {
   Sheet,
   SheetClose,
@@ -21,7 +22,7 @@ const MobileMenu = ({ className }: any) => {
     <div className={...className}>
       <Sheet>
         <SheetTrigger asChild>
-          <button>Open</button>
+          <button  className="mr-[16px] mt-[8px] "><FaBars className="w-[24px] h-[24px] text-[#EEB33B]"></FaBars></button>
         </SheetTrigger>
         <SheetContent className="bg-card">
           <SheetHeader className="h-[85%] ">
@@ -56,9 +57,9 @@ const MobileMenu = ({ className }: any) => {
 
           <SheetFooter>
             <SheetClose asChild>
-              <button className="py-[12px] font-[400] px-[40px] rounded-full text-black bg-[#EEB33B]">
+              <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
                 Join our community
-              </button>
+              </a>
             </SheetClose>
           </SheetFooter>
         </SheetContent>

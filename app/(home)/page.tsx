@@ -7,7 +7,7 @@ import {
   BsGithub,
   BsTwitter,
   BsLinkedin,
-  BsFacebook,
+  BsWhatsapp,
   BsInstagram,
   BsYoutube,
 } from "react-icons/bs";
@@ -20,43 +20,44 @@ interface IconDetails {
 const iconGroup: IconDetails[] = [
   {
     iconName: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://discord.gg/N73nyWdj",
   },
   {
     iconName: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://github.com/Bug-Bounty-Brigade",
   },
   {
     iconName: <BsTwitter className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://twitter.com/BBB_GHC",
   },
   {
     iconName: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
   },
   {
     iconName: <BsTelegram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://t.me/Resources6969",
   },
   {
     iconName: <BsLinkedin className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://www.linkedin.com/company/bug-bounty-brigade/",
   },
   {
     iconName: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
   },
   {
-    iconName: <BsFacebook className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    iconName: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
   },
+
 ];
 
 export default function Home() {
   return (
     <PageLayout>
-      <main className="flex flex-col gap-12 py-12">
-        <h1 className="flex heading font-[700] text-[1.2rem] lg:text-[48px]">
+      <main className="flex flex-col gap-12 py-6 md:py-12">
+        <h1 className="flex heading font-[700] text-[1.2rem] md:text-[36px] xl:text-[48px]">
           Unleash Your Cybersecurity Skills and Safeguard the Digital World with
           Bug Bounty Brigade
         </h1>
@@ -66,7 +67,7 @@ export default function Home() {
             width={1000}
             height={1000}
             alt="person photo"
-            className="w-full lg:w-[90%] h-[26rem]"
+            className="w-full lg:w-[90%] lg:h-[26rem]"
           />
           <div className="flex flex-col gap-12">
             <p>
@@ -76,17 +77,17 @@ export default function Home() {
               potential threats.
             </p>
             <p> Are you ready to harness your skills and make a real impact?</p>
-            <button className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]">
+            <a className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
               <FiArrowUpRight />
-            </button>
+            </a>
             <div className="flex w-full gap-[30px]">
-              <div className="flex flex-col md:flex-row items-center gap-4">
+              <div className="flex flex-col md:flex-row items-center gap-4 w-1/2 md:w-auto">
                 <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
-                <h2>Community members</h2>
+                <h2 className="w-full text-center md:text-left">Community members</h2>
               </div>
               <hr className="rotate-180 border border-[#6C5B3F] h-full " />
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-col md:flex-row">
                 <Image
                   src="/teamphoto.png"
                   width={1000}
@@ -94,14 +95,14 @@ export default function Home() {
                   alt="person photo"
                   className="w-12 h-12 rounded-full"
                 />
-                <p>“Super cool place to “learn and grow”</p>
+                <p className="text-center md:text-left">“Super cool place to “learn and grow”</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="py-12">
-          <div className="bg-card flex flex-col px-[84px] py-[40px]">
+          <div className="bg-card flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px]">
             <p className="text-center">About us</p>
             <h2 className="heading mt-3 font-[700] text-[24px] md:text-[36px] text-center">
               Empowering Security through Collaboration
@@ -119,38 +120,47 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-12 py-12">
+
+        <div className="flex flex-col gap-12 py-6 md:py-12">
           <div>
             <p className="text-center text-[20px]">Join us</p>
-            <h2 className="heading font-[700] text-center text-[36px]">
+            <h2 className="heading font-[700] text-center text-[27px] sm:text-[36px]">
               Join the Bug Bounty Brigade Community
             </h2>
           </div>
-          <div className="grid justify-center md:justify-between gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {iconGroup.map((icon, index) => (
-              <div
-                key={index}
-                className="bg-card flex items-center w-full px-[66px] pt-[88px] rounded-[24px] pb-6"
-              >
-                <div className="flex flex-col gap-20 mx-auto ">
-                  <div className="text-[#EEB33B] flex items-center text-center w-fit mx-auto">
-                    {icon.iconName}
+
+
+            <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {iconGroup.map((icon, index) => (
+                <div
+                  key={index}
+                  className="bg-card flex items-center justify-center w-full rounded-[24px] mx-auto max-w-[300px]"
+                >
+                <div className='w-full px-6 py-6'>  
+                  <div className="flex justify-center items-center  flex-col gap-9 lg:gap-20 mx-auto  min-h-[227px]">
+                      <div className="text-[#EEB33B] ">
+                        {icon.iconName}
+                      </div>
+                    </div>
+                    <p className="border-b w-fit border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
+                      Join our community
+                    </p>
+
                   </div>
-                  <p className="border-b w-fit border-b-[#EEB33B] text-[#EEB33B]">
-                    Join our community
-                  </p>
                 </div>
-              </div>
-            ))}
+
+              ))}
+
           </div>
         </div>
+
         <div className="flex flex-col py-[40px]">
           <div className="flex flex-col gap-12">
-            <div className="flex flex-col md:flex-row items-center md:items-start">
-              <div className="flex flex-col w-[90%]">
+             <div className="flex flex-col md:flex-row items-start">
+              <div className="flex flex-col mx-auto md:mx-0 w-[90%] ">
                 <div className="flex flex-col w-[90%]">
                   <p>Blog</p>
-                  <p className="heading mt-3 text-[36px] font-[700]">
+                  <p className="heading mt-3 text-[27px] sm:text-[36px] font-[700]">
                     Stay Updated with Our Latest Blogs
                   </p>
                   <p className="mt-6 text-color">
@@ -162,7 +172,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex pt-[20px] md:pt-0 mx-auto md:mx-0 w-[90%] md:w-auto">
                 <button className="flex w-[15.5rem] max-h-[3rem] items-center rounded-[100px] px-[40px] py-[10px] justify-between border border-[#E8EABB] neutral">
                   View all <FiArrowUpRight />
                 </button>
@@ -177,10 +187,10 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     alt="person photo"
-                    className="w-full h-[13.5rem] object-cover rounded-[20px]"
+                    className="w-full h-[13.5rem] object-cover mb-[20px] lg:mb-0 rounded-[20px]"
                   />
-                  <div className="flex flex-col gap-4 flex-grow justify-center w-[80%]">
-                    <h2 className="text-[24px] neutral">
+                  <div className="flex flex-col gap-4 flex-grow justify-center sm:w-[80%]">
+                    <h2 className="text-[20px] sm:text-[24px] neutral">
                       Lorem ipsum dolor sit amet consectetur adipiscing elit sed
                       do{" "}
                     </h2>
@@ -195,9 +205,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-6">
-                <div className="flex bg-card rounded-[20px] p-6">
-                  <div className="flex flex-col gap-4 w-[80%]">
-                    <h2 className="text-[24px] neutral">
+                <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6">
+                  <div className="flex flex-col gap-4 w-full sm:w-[80%] md:pr-8 order-2 md:order-1">                    
+                    <h2 className="text-[20px] sm:text-[24px] neutral">
                       Lorem ipsum dolor sit amet consectetur adipiscing elit sed
                       do{" "}
                     </h2>
@@ -214,13 +224,13 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     alt="person photo"
-                    className="w-[14.5rem] h-[10rem] rounded-[20px]"
+                    className="w-full md:w-[14.5rem] md:h-[10rem] rounded-[20px] mb-[20px] md:mb-0 object-cover order-1 md:order-2 md:w-auto"
                   />
                 </div>
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex flex-col md:flex-row bg-card rounded-[20px] p-6">
-                    <div className="flex flex-col gap-4 w-[80%]">
-                      <h2 className="text-[24px] neutral">
+                    <div className="flex flex-col gap-4 sm:w-[80%]">
+                      <h2 className="text-[20px] sm:text-[24px] neutral">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit
                         sed do{" "}
                       </h2>
@@ -234,8 +244,8 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex bg-card rounded-[20px] p-6">
-                    <div className="flex flex-col gap-4 w-[80%]">
-                      <h2 className="text-[24px] neutral">
+                    <div className="flex flex-col gap-4 sm:w-[80%]">
+                      <h2 className="text-[20px] sm:text-[24px] neutral">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit
                         sed do{" "}
                       </h2>
