@@ -9,7 +9,7 @@ const page = () => {
   return (
     <PageLayout>
       <div className="w-full min-h-screen mx-auto">
-        <section className="flex flex-col p-12 space-y-4 md:space-y-0 md:space-x-8 md:flex-row ">
+        <section className="flex flex-col p-4 md:p-12 space-y-4 md:space-y-0 md:space-x-8 md:flex-row ">
           <h2 className="md:w-1/2 text-4xl font-semibold text-transparent bg-gradient-to-r from-[#EEB33B] to-[#E8EABC] bg-clip-text ">
             Bug Bounty Brigade - Global Hacking Community
           </h2>
