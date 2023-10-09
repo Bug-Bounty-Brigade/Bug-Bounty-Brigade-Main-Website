@@ -19,6 +19,10 @@ interface IconDetails {
 
 const iconGroup: IconDetails[] = [
   {
+    iconName: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
+  },
+  {
     iconName: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://discord.gg/N73nyWdj",
   },
@@ -46,11 +50,7 @@ const iconGroup: IconDetails[] = [
     iconName: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
   },
-  {
-    iconName: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
-    link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
-  },
-
+  
 ];
 
 export default function Home() {
@@ -142,9 +142,9 @@ export default function Home() {
                         {icon.iconName}
                       </div>
                     </div>
-                    <p className="border-b w-fit border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
+                   <a href={icon.link} target="_blank"> <p className="border-b w-fit cursor-pointer border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
                       Join our community
-                    </p>
+                    </p></a>
 
                   </div>
                 </div>
@@ -224,7 +224,7 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     alt="person photo"
-                    className="w-full md:w-[14.5rem] md:h-[10rem] rounded-[20px] mb-[20px] md:mb-0 object-cover order-1 md:order-2 md:w-auto"
+                    className="w-full md:w-[14.5rem] md:h-[10rem] rounded-[20px] mb-[20px] md:mb-0 object-cover order-1 md:order-2 lg:w-auto"
                   />
                 </div>
                 <div className="flex flex-col md:flex-row gap-6">
