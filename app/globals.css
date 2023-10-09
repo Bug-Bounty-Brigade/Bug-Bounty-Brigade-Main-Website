@@ -36,4 +36,5 @@
 }
 body{
   background: #2E2C28;
+  min-width:320px;
 }
