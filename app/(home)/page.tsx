@@ -11,6 +11,7 @@ import {
   BsInstagram,
   BsYoutube,
 } from "react-icons/bs";
+import EventsHome from "@/components/EventsHome";
 
 interface IconDetails {
   iconName: React.ReactNode;
@@ -82,12 +83,12 @@ export default function Home() {
               <FiArrowUpRight />
             </a>
             <div className="flex w-full gap-[30px]">
-              <div className="flex flex-col md:flex-row items-center gap-4 w-1/2 md:w-auto">
+              <div className="flex flex-col items-center w-1/2 gap-4 md:flex-row md:w-auto">
                 <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
                 <h2 className="w-full text-center md:text-left">Community members</h2>
               </div>
               <hr className="rotate-180 border border-[#6C5B3F] h-full " />
-              <div className="flex items-center gap-4 flex-col md:flex-row">
+              <div className="flex flex-col items-center gap-4 md:flex-row">
                 <Image
                   src="/teamphoto.png"
                   width={1000}
@@ -103,7 +104,7 @@ export default function Home() {
 
         <div className="py-12">
           <div className=" flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px] bg-[#5f9ea0] rounded-2xl">
-            <p className="text-center text-xl md:text-4xl font-bold ">About us</p>
+            <p className="text-xl font-bold text-center md:text-4xl ">About us</p>
             <h2 className="heading  font-[700] text-[24px] md:text-[36px] text-center">
               Empowering Security through Collaboration
             </h2>
@@ -123,14 +124,14 @@ export default function Home() {
 
         <div className="flex flex-col gap-12 py-6 md:py-12">
           <div>
-            <p className="text-center  text-xl md:text-4xl font-bold">Join us</p>
+            <p className="text-xl font-bold text-center md:text-4xl">Join us</p>
             <h2 className="heading font-[700] text-center text-[27px] sm:text-[36px]">
               Join the Bug Bounty Brigade Community
             </h2>
           </div>
 
 
-            <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
               {iconGroup.map((icon, index) => (
                 <div
                   key={index}
@@ -153,13 +154,13 @@ export default function Home() {
 
           </div>
         </div>
-
+        <EventsHome />
         <div className="flex flex-col py-[40px]">
           <div className="flex flex-col gap-12">
-             <div className="flex flex-col md:flex-row items-start">
+             <div className="flex flex-col items-start md:flex-row">
               <div className="flex flex-col mx-auto md:mx-0 w-[90%] ">
                 <div className="flex flex-col w-[90%]">
-                  <p className="text-xl md:text-2xl font-bold">Blogs</p>
+                  <p className="text-xl font-bold md:text-2xl">Blogs</p>
                   <p className="heading mt-3 text-[27px] sm:text-[36px] font-[700]">
                     Stay Updated with Our Latest Blogs
                   </p>
@@ -178,7 +179,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 ">
               {/* Cards Here */}
               <div className="flex flex-grow w-full">
                 <div className="bg-card  w-full flex flex-col justify-between rounded-[24px] p-6">
@@ -227,7 +228,7 @@ export default function Home() {
                     className="w-full md:w-[14.5rem] md:h-[10rem] rounded-[20px] mb-[20px] md:mb-0 object-cover order-1 md:order-2 lg:w-auto"
                   />
                 </div>
-                <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex flex-col gap-6 md:flex-row">
                   <div className="flex flex-col md:flex-row bg-card rounded-[20px] p-6">
                     <div className="flex flex-col gap-4 sm:w-[80%]">
                       <h2 className="text-[20px] sm:text-[24px] neutral">
