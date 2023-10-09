@@ -15,9 +15,7 @@
     @apply text-[#E8EABB]
   }
 
-  .bg-card{
-    @apply bg-[#40392F]
-  }
+  
 
   .btn{
     @apply bg-[#EEB33B] text-black rounded-[100px]
@@ -35,6 +33,11 @@
   -webkit-text-fill-color: transparent;
 }
 body{
-  background: #2E2C28;
+  background-color: #0cbaba;
+    background-image: linear-gradient(99deg,#0cbaba,#380036 74%);
+    color: wheat;
   min-width:320px;
+}
+.bg-card{
+  background: radial-gradient(#eeb33b, transparent);
 }

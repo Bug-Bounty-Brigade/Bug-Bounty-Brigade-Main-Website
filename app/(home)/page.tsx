@@ -102,12 +102,12 @@ export default function Home() {
         </div>
 
         <div className="py-12">
-          <div className="bg-card flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px]">
-            <p className="text-center">About us</p>
-            <h2 className="heading mt-3 font-[700] text-[24px] md:text-[36px] text-center">
+          <div className=" flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px] bg-[#5f9ea0] rounded-2xl">
+            <p className="text-center text-xl md:text-4xl font-bold ">About us</p>
+            <h2 className="heading  font-[700] text-[24px] md:text-[36px] text-center">
               Empowering Security through Collaboration
             </h2>
-            <p className="text-center mt-6 font-[22px] md:font-[18px] text-color">
+            <p className="md:text-center mt-2 font-[22px] md:font-[18px] text-color">
               Bug Bounty Brigade is a vibrant community of cybersecurity
               professionals and ethical hackers dedicated to enhancing the
               security of digital systems. Our mission is to cultivate a
@@ -123,7 +123,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-12 py-6 md:py-12">
           <div>
-            <p className="text-center text-[20px]">Join us</p>
+            <p className="text-center  text-xl md:text-4xl font-bold">Join us</p>
             <h2 className="heading font-[700] text-center text-[27px] sm:text-[36px]">
               Join the Bug Bounty Brigade Community
             </h2>
@@ -134,7 +134,7 @@ export default function Home() {
               {iconGroup.map((icon, index) => (
                 <div
                   key={index}
-                  className="bg-card flex items-center justify-center w-full rounded-[24px] mx-auto max-w-[300px]"
+                  className=" flex items-center justify-center w-full rounded-[24px] mx-auto max-w-[300px] bg-[#2f4f4f]"
                 >
                 <div className='w-full px-6 py-6'>  
                   <div className="flex justify-center items-center  flex-col gap-9 lg:gap-20 mx-auto  min-h-[227px]">
@@ -159,7 +159,7 @@ export default function Home() {
              <div className="flex flex-col md:flex-row items-start">
               <div className="flex flex-col mx-auto md:mx-0 w-[90%] ">
                 <div className="flex flex-col w-[90%]">
-                  <p>Blog</p>
+                  <p className="text-xl md:text-2xl font-bold">Blogs</p>
                   <p className="heading mt-3 text-[27px] sm:text-[36px] font-[700]">
                     Stay Updated with Our Latest Blogs
                   </p>
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
               {/* Cards Here */}
               <div className="flex flex-grow w-full">
-                <div className="bg-card w-full flex flex-col justify-between rounded-[24px] p-6">
+                <div className="bg-card  w-full flex flex-col justify-between rounded-[24px] p-6">
                   <Image
                     src="/heroImage.png"
                     width={1000}
@@ -205,7 +205,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-6">
-                <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6">
+                <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6 bg-[#eeb33b]bg-gradient-radial">
                   <div className="flex flex-col gap-4 w-full sm:w-[80%] md:pr-8 order-2 md:order-1">                    
                     <h2 className="text-[20px] sm:text-[24px] neutral">
                       Lorem ipsum dolor sit amet consectetur adipiscing elit sed
