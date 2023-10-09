@@ -7,7 +7,7 @@ import {
   BsGithub,
   BsTwitter,
   BsLinkedin,
-  BsFacebook,
+  BsWhatsapp,
   BsInstagram,
   BsYoutube,
 } from "react-icons/bs";
@@ -20,36 +20,37 @@ interface IconDetails {
 const iconGroup: IconDetails[] = [
   {
     iconName: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://discord.gg/N73nyWdj",
   },
   {
     iconName: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://github.com/Bug-Bounty-Brigade",
   },
   {
     iconName: <BsTwitter className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://twitter.com/BBB_GHC",
   },
   {
     iconName: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
   },
   {
     iconName: <BsTelegram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://t.me/Resources6969",
   },
   {
     iconName: <BsLinkedin className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://www.linkedin.com/company/bug-bounty-brigade/",
   },
   {
     iconName: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
   },
   {
-    iconName: <BsFacebook className="w-[5.25rem] h-[5.25rem]" />,
-    link: "",
+    iconName: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
   },
+
 ];
 
 export default function Home() {
@@ -76,10 +77,10 @@ export default function Home() {
               potential threats.
             </p>
             <p> Are you ready to harness your skills and make a real impact?</p>
-            <button className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]">
+            <a className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
               <FiArrowUpRight />
-            </button>
+            </a>
             <div className="flex w-full gap-[30px]">
               <div className="flex flex-col md:flex-row items-center gap-4 w-1/2 md:w-auto">
                 <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
@@ -128,6 +129,7 @@ export default function Home() {
             </h2>
           </div>
 
+
             <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {iconGroup.map((icon, index) => (
                 <div
@@ -143,9 +145,12 @@ export default function Home() {
                     <p className="border-b w-fit border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
                       Join our community
                     </p>
+
                   </div>
                 </div>
+
               ))}
+
           </div>
         </div>
 

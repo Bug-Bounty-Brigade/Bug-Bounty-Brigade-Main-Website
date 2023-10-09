@@ -57,9 +57,9 @@ const MobileMenu = ({ className }: any) => {
 
           <SheetFooter>
             <SheetClose asChild>
-              <button className="py-[12px] font-[400] px-[40px] rounded-full text-black bg-[#EEB33B]">
+              <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
                 Join our community
-              </button>
+              </a>
             </SheetClose>
           </SheetFooter>
         </SheetContent>
