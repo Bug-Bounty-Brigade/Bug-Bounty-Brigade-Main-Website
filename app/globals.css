@@ -41,3 +41,6 @@ body{
 .bg-card{
   background: radial-gradient(#eeb33b, transparent);
 }
+.bg-cardevents{
+  background: radial-gradient(#ee3be3, transparent);
+}

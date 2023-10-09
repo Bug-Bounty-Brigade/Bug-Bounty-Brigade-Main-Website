@@ -24,12 +24,11 @@ const MobileMenu = ({ className }: any) => {
         <SheetTrigger asChild>
           <button  className="mr-[16px] mt-[8px] "><FaBars className="w-[24px] h-[24px] text-[#EEB33B]"></FaBars></button>
         </SheetTrigger>
-        <SheetContent className="bg-card">
+        <SheetContent className="bg-[#5f9ea0]">
           <SheetHeader className="h-[85%] ">
             {/* <SheetTitle>Edit profile</SheetTitle> */}
             <SheetDescription
-              className="flex mt-11 flex-col text-2xl h-fit gap-8
-             justify-between"
+              className="flex flex-col justify-between gap-8 text-2xl mt-11 h-fit"
             >
               <Link href="/" className={pathname === "/" ? active : ""}>
                 Home
