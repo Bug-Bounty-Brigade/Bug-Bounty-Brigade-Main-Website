@@ -21,7 +21,7 @@ const events: EventPosts[] = [
     date: "Wed, Jun 28, 2023, 10.30am",
     title: "Reflected XSS And Bypasses",
     description:
-      "🙌 A heartfelt thank you to our incredible speaker, Shiv Pratap Singh , for sharing his expertise on Reflected XSS And Bypasses. Your insights illuminated our Bug Bounty Brigade community!r",
+      "🙌 A heartfelt thank you to our incredible speaker, Shiv Pratap Singh , for sharing his expertise on Reflected XSS And Bypasses. Your insights illuminated our Bug Bounty Brigade community!",
     attendeesCount: "Shiv Pratap Singh | 122 attendees",
   },
   {
@@ -70,11 +70,11 @@ const events: EventPosts[] = [
 const Events = () => {
   return (
     <PageLayout>
-      <header className="flex flex-col items-center w-full gap-12 md:flex-row">
-        <h2 className="text-[30px] heading font-[700] w-full md:text-[48px]">
+      <header className="flex flex-col items-center w-full gap-4 md:gap-12 md:flex-row">
+        <h2 className="text-[1.2rem] heading font-[700] w-full md:text-[36px]">
           Ignite Your Cybersecurity Journey with Our Events
         </h2>
-        <p className="text-2xl md:text-[18px] font-[400] w-full text-color">
+        <p className="text-lg md:text-2xl md:text-[18px] font-[400] w-full text-color">
           Engage in captivating discussions, interactive workshops, and
           networking opportunities with industry experts. Ignite your
           cybersecurity journey by staying informed, connecting with like-minded

@@ -18,7 +18,7 @@ const PhotoCard = ({
   imageurl,
 }: PhotoCard) => {
   return (
-    <div className="bg-[#40392F] p-4 rounded-3xl">
+    <div className="p-4 bg-photos rounded-3xl">
       <div className="w-full mx-auto ">
         <Image
           src={imageurl}

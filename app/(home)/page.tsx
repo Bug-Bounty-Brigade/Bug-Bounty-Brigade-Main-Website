@@ -1,6 +1,7 @@
 import PageLayout from "@/components/PageLayout";
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
+import Nikhil from "../assets/nikhil.jpg"
 import {
   BsDiscord,
   BsTelegram,
@@ -14,42 +15,55 @@ import {
 import EventsHome from "@/components/EventsHome";
 
 interface IconDetails {
-  iconName: React.ReactNode;
+  icon: React.ReactNode;
   link: string;
+  iconName?: string;
 }
-
 const iconGroup: IconDetails[] = [
   {
-    iconName: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
+    icon: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
+    iconName: "whatsapp",
+
   },
   {
-    iconName: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
-    link: "https://discord.gg/N73nyWdj",
-  },
-  {
-    iconName: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,
-    link: "https://github.com/Bug-Bounty-Brigade",
-  },
-  {
-    iconName: <BsTwitter className="w-[5.25rem] h-[5.25rem]" />,
-    link: "https://twitter.com/BBB_GHC",
-  },
-  {
-    iconName: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
-    link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
-  },
-  {
-    iconName: <BsTelegram className="w-[5.25rem] h-[5.25rem]" />,
-    link: "https://t.me/Resources6969",
-  },
-  {
-    iconName: <BsLinkedin className="w-[5.25rem] h-[5.25rem]" />,
+    icon: <BsLinkedin className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://www.linkedin.com/company/bug-bounty-brigade/",
+    iconName: "linkedin",
+
   },
   {
-    iconName: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
+    icon: <BsTwitter className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://twitter.com/BBB_GHC",
+    iconName: "twitter",
+  },
+  {
+    icon: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://discord.gg/N73nyWdj",
+    iconName: "discord",
+  },
+  {
+    icon: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://github.com/Bug-Bounty-Brigade",
+    iconName: "github",
+  },
+  
+  {
+    icon: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
+    iconName: "youtube",
+  },
+  {
+    icon: <BsTelegram className="w-[5.25rem] h-[5.25rem]" />,
+    link: "https://t.me/Resources6969",
+    iconName: "telegram",
+
+  },
+  
+  {
+    icon: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
+    iconName: "instagram",
   },
   
 ];
@@ -57,7 +71,7 @@ const iconGroup: IconDetails[] = [
 export default function Home() {
   return (
     <PageLayout>
-      <main className="flex flex-col gap-12 py-6 md:py-12">
+      <main className="flex flex-col gap-4 py-4 ">
         <h1 className="flex heading font-[700] text-[1.2rem] md:text-[36px] xl:text-[48px]">
           Unleash Your Cybersecurity Skills and Safeguard the Digital World with
           Bug Bounty Brigade
@@ -70,7 +84,7 @@ export default function Home() {
             alt="person photo"
             className="w-full lg:w-[90%] lg:h-[26rem]"
           />
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col justify-center gap-4 ">
             <p>
               Join the leading community of ethical hackers and cybersecurity
               enthusiasts. Together, we strive to make the digital world safer
@@ -83,14 +97,14 @@ export default function Home() {
               <FiArrowUpRight />
             </a>
             <div className="flex w-full gap-[30px]">
-              <div className="flex flex-col items-center w-1/2 gap-4 md:flex-row md:w-auto">
-                <h1 className="text-[40px] font-[700] gap-4 neutral">10K+</h1>
+              <div className="flex flex-col items-center w-1/2 gap-2 md:gap-4 md:flex-row md:w-auto">
+                <h1 className="text-[40px] font-[700] gap-4 neutral">1.5K+</h1>
                 <h2 className="w-full text-center md:text-left">Community members</h2>
               </div>
               <hr className="rotate-180 border border-[#6C5B3F] h-full " />
               <div className="flex flex-col items-center gap-4 md:flex-row">
                 <Image
-                  src="/teamphoto.png"
+                  src={Nikhil}
                   width={1000}
                   height={1000}
                   alt="person photo"
@@ -102,7 +116,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="py-12">
+        <div className="pt-12">
           <div className=" flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px] bg-[#5f9ea0] rounded-2xl">
             <p className="text-xl font-bold text-center md:text-4xl ">About us</p>
             <h2 className="heading  font-[700] text-[24px] md:text-[36px] text-center">
@@ -122,9 +136,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-12 py-6 md:py-12">
+        <div className="flex flex-col gap-4 md:gap-12 md:py-12">
           <div>
-            <p className="text-xl font-bold text-center md:text-4xl">Join us</p>
+            {/* <p className="text-xl font-bold text-center md:text-4xl">Join us</p> */}
             <h2 className="heading font-[700] text-center text-[27px] sm:text-[36px]">
               Join the Bug Bounty Brigade Community
             </h2>
@@ -138,15 +152,15 @@ export default function Home() {
                   className=" flex items-center justify-center w-full rounded-[24px] mx-auto max-w-[300px] bg-[#2f4f4f]"
                 >
                 <div className='w-full px-6 py-6'>  
-                  <div className="flex justify-center items-center  flex-col gap-9 lg:gap-20 mx-auto  min-h-[227px]">
+                  <div className="flex justify-center items-center  flex-col gap-9 lg:gap-20 mx-auto min-h-[100px] md:min-h-[227px]">
                       <div className="text-[#EEB33B] ">
-                        {icon.iconName}
+                        {icon.icon}
                       </div>
                     </div>
                    <a href={icon.link} target="_blank"> <p className="border-b w-fit cursor-pointer border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
-                      Join our community
-                    </p></a>
-
+                      Join us on {icon.iconName}
+                    </p>
+                    </a>
                   </div>
                 </div>
 
@@ -155,7 +169,7 @@ export default function Home() {
           </div>
         </div>
         <EventsHome />
-        <div className="flex flex-col py-[40px]">
+        <div className="flex flex-col py-5 md:py-[40px]">
           <div className="flex flex-col gap-12">
              <div className="flex flex-col items-start md:flex-row">
               <div className="flex flex-col mx-auto md:mx-0 w-[90%] ">

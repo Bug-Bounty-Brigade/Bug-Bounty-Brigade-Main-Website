@@ -6,7 +6,7 @@ import cvehunting from "../app/assets/cvehunting.png";
 import Link from 'next/link';
 const EventsHome = () => {
   return (
-    <div className="flex flex-col py-[40px]">
+    <div className="flex flex-col py-5 md:py-[40px]">
           <div className="flex flex-col gap-12">
              <div className="flex flex-col items-start md:flex-row">
               <div className="flex flex-col mx-auto md:mx-0 w-[90%] ">
