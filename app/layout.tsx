@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bug Bounty Brigade",
-  description: "Bug Bounty Brigade Community",
+  description: " Join the leading community of ethical hackers and cybersecurity enthusiasts.",
 };
 
 export default function RootLayout({

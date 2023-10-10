@@ -13,17 +13,17 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex w-[90%] md:w-full mx-auto flex-col py-12">
+    <footer className="flex w-[90%] md:w-full mx-auto flex-col py-4 md:py-12">
       <div className=" md:px-6 sm:px-12 md:py-[40px] rounded-[24px]">
-        <div className="w-full flex flex-col">
-          <div className="flex flex-col md:flex-row gap-y-6 md:gap-y-0 w-full justify-between">
-            <div className="flex gap-3 items-center">
+        <div className="flex flex-col w-full">
+          <div className="flex flex-col justify-between w-full md:flex-row gap-y-6 md:gap-y-0">
+            <div className="flex items-center gap-3">
               <Image
                 src="/mainlogo.png"
                 width={1000}
                 height={1000}
                 quality={100}
-                className="w-12 h-12 rounded-full object-cover"
+                className="object-cover w-12 h-12 rounded-full"
                 alt="logo"
               />
               <h2 className="text-[#EEB33B] text-[20px] font-[700]">
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="my-5 border border-[#6C5B3F]" />
-          <div className="flex flex-col md:flex-row gap-4 w-full justify-between">
+          <div className="flex flex-col justify-between w-full gap-4 md:flex-row">
             <p>© 2023 Bug Bounty Brigade All Rights Reserved</p>
             <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
