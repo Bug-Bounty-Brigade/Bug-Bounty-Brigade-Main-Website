@@ -86,7 +86,7 @@ const Events = () => {
         {events.map((event, index) => (
           <div
             key={index}
-            className="bg-cardevents flex flex-col rounded-[24px] p-6 gap-6"
+            className="bg-cardevents flex flex-col rounded-[24px] p-6 gap-2 md:gap-6"
           >
             <Image
               src={event.image}
