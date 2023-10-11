@@ -39,12 +39,12 @@ body{
   min-width:320px;
 }
 .bg-card{
-  background: radial-gradient(#eeb33b, transparent);
+  background: radial-gradient(#6f5624, transparent);
 }
 .bg-cardevents{
   background: radial-gradient(#bc42b5, #559b4e);
 }
 .bg-photos{
   background-color: #a55c1b;
-background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+background-image: linear-gradient(315deg, #a55c1b 0%, #381111  74%);
 }

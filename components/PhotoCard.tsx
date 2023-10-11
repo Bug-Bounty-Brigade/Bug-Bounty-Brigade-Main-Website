@@ -27,7 +27,7 @@ const PhotoCard = ({
           width={268}
           height={263}
         />
-        <h4 className="text-2xl text-[#E8EABB] my-2">{name}</h4>
+        <h4 className="text-2xl md:text-xl text-[#E8EABB] my-2">{name}</h4>
         <p className="my-2 ">{companyname}</p>
         <div className="flex mt-2 space-x-2">
           <a href={linkedinurl} className="bg-[#6C5B3F] p-1 rounded-full" target="_blank">
