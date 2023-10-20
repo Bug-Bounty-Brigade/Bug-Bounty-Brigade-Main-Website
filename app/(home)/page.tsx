@@ -117,7 +117,8 @@ export default function Home() {
         </div>
 
         <div className="pt-12">
-          <div className=" flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px] bg-[#5f9ea0] rounded-2xl">
+          <div className="flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px] rounded-2xl" style={{ background: 'linear-gradient(99deg, #000, transparent 84%)' }}>
+
             <p className="text-xl font-bold text-center md:text-4xl ">About us</p>
             <h2 className="heading  font-[700] text-[24px] md:text-[36px] text-center">
               Empowering Security through Collaboration

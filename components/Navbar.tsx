@@ -12,7 +12,8 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex py-4">
-      <nav className="w-full flex px-[10px] rounded-[100px] py-2 md:py-4 bg-[#5f9ea0]">
+      <nav className="w-full flex px-[10px] rounded-[100px] py-2 md:py-4" style={{background: 'linear-gradient(99deg,  #000, transparent  94%)'}}>
+
         <div className="flex w-full">
           <div className="flex w-full items-center justify-between">
             <div className="flex gap-3 items-center">

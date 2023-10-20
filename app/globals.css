@@ -32,18 +32,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body{
-  background-color: #0cbaba;
-    background-image: linear-gradient(99deg,#0cbaba,#380036 74%);
-    color: wheat;
-  min-width:320px;
+
+
+body {
+  background-color: #cebf80;
+  background-image: linear-gradient(99deg, #cebf80, #000 74%);
+  color: wheat;
+  min-width: 320px;
 }
+
+
+
 .bg-card{
-  background: radial-gradient(#6f5624, transparent);
+  background: radial-gradient(#000, transparent);
 }
+
+
 .bg-cardevents{
   background: radial-gradient(#bc42b5, #559b4e);
 }
+
 .bg-photos{
   background-color: #a55c1b;
 background-image: linear-gradient(315deg, #a55c1b 0%, #381111  74%);
