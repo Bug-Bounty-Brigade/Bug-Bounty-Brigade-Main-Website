@@ -13,7 +13,11 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import EventsHome from "@/components/EventsHome";
-
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Bug Bounty Brigade",
+  description: " Join the leading community of ethical hackers and cybersecurity enthusiasts.",
+};
 interface IconDetails {
   icon: React.ReactNode;
   link: string;
@@ -98,7 +102,7 @@ export default function Home() {
             </a>
             <div className="flex w-full gap-[30px]">
               <div className="flex flex-col items-center w-1/2 gap-2 md:gap-4 md:flex-row md:w-auto">
-                <h1 className="text-[40px] font-[700] gap-4 neutral">1.5K+</h1>
+                <h1 className="text-[40px] font-[700] gap-4 neutral">10.5K+</h1>
                 <h2 className="w-full text-center md:text-left">Community members</h2>
               </div>
               <hr className="rotate-180 border border-[#6C5B3F] h-full " />
@@ -117,7 +121,7 @@ export default function Home() {
         </div>
 
         <div className="pt-12">
-          <div className="flex flex-col px-[21px] sm:px-[42px] py-[20px] md:px-[84px] md:py-[40px] rounded-2xl" style={{ background: 'linear-gradient(99deg, #000, transparent 84%)' }}>
+          <div className="flex flex-col  py-[20px] md:px-[84px] md:py-[40px] rounded-2xl" style={{ background: 'linear-gradient(99deg, #000, transparent 84%)' }}>
 
             <p className="text-xl font-bold text-center md:text-4xl ">About us</p>
             <h2 className="heading  font-[700] text-[24px] md:text-[36px] text-center">

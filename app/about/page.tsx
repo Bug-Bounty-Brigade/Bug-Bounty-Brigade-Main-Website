@@ -8,6 +8,13 @@ import megna from "../assets/megna.png";
 import vinay from "../assets/vinay.png";
 import MudassirKhanPic from "../assets/mudassir.png";
 import sanjay from "../assets/sanjay.jpg";
+import pallav from "../assets/pallav.jpg";
+import manasverma from "../assets/manasverma.png";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Bug Bounty Brigade - About Us",
+  description: "Team Bug Bounty Brigade",
+};
 const page = () => {
   return (
     <PageLayout>
@@ -68,6 +75,13 @@ const page = () => {
               twitterurl="https://twitter.com/sudoninja_"
               imageurl={sanjay}
             />
+            <PhotoCard
+              name="PALLAV PUROHIT"
+              companyname="Cybersecurity Trailblazer"
+              linkedinurl="https://www.linkedin.com/in/pallav-purohit-56874a222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              twitterurl="https://twitter.com/BBB_GHC"
+              imageurl={pallav}
+            />
 
           </div>
         </section>
@@ -89,6 +103,13 @@ const page = () => {
               linkedinurl="https://www.linkedin.com/in/vinay-boggavarapu-522324230/"
               twitterurl="https://twitter.com/VinayBoggavarpu"
               imageurl={vinay}
+            />
+            <PhotoCard
+              name="Manas Verma"
+              companyname="Backend Developer"
+              linkedinurl="https://www.linkedin.com/in/manas-verma-0000ba227/"
+              twitterurl="https://twitter.com/MANASxVERMA"
+              imageurl={manasverma}
             />
             <PhotoCard
               name="Meghna Majumder "

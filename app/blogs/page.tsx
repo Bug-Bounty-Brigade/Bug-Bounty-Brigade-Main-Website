@@ -1,5 +1,9 @@
 import PageLayout from "@/components/PageLayout";
-
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Bug Bounty Brigade - Blogs",
+  description: "See the latest blogs in Bug Bounty Brigade",
+};
 const Blog = () => {
   return (
     <PageLayout>
