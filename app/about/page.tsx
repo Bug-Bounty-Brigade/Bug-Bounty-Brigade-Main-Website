@@ -7,6 +7,7 @@ import arifali from "../assets/arifali.jpg";
 import megna from "../assets/megna.png";
 import vinay from "../assets/vinay.png";
 import MudassirKhanPic from "../assets/mudassir.png";
+import sanjay from "../assets/sanjay.jpg";
 const page = () => {
   return (
     <PageLayout>
@@ -36,7 +37,7 @@ const page = () => {
               twitterurl="https://twitter.com/ShaikArifAli1"
               imageurl={arifali}
             />
-          
+
             <PhotoCard
               name="Neerati Nikhil Kumar"
               companyname="CO-FOUNDER"
@@ -44,15 +45,15 @@ const page = () => {
               twitterurl="https://x.com/Myth4ckz0x?t=BN6U2gk6qe3USKDmpgE8pA&s=08"
               imageurl={Nikhil}
             />
-          
+
             <PhotoCard
               name="Khammampati Shiva Sai"
               companyname="CO-FOUNDER"
               linkedinurl="https://www.linkedin.com/in/shiva-sai-khammampati/"
               twitterurl="https://twitter.com/shivagoud6771"
-              imageurl={shiva }
+              imageurl={shiva}
             />
-          
+
             <PhotoCard
               name="Yuvraj singh Thakur"
               companyname="CO-FOUNDER"
@@ -60,7 +61,21 @@ const page = () => {
               twitterurl="https://twitter.com/itsyuvi8?t=iOrCLgoE5XZuMIwCIli4tQ&s=09"
               imageurl={yuvraj}
             />
-           
+            <PhotoCard
+              name="SANJAY SINGH"
+              companyname="Cyber Ninja"
+              linkedinurl="https://www.linkedin.com/in/sanjaysingh06/"
+              twitterurl="https://twitter.com/sudoninja_"
+              imageurl={sanjay}
+            />
+
+          </div>
+        </section>
+        <section>
+          <h3 className="text-3xl text-center font-semibold text-transparent bg-gradient-to-r mt-4 from-[#EEB33B] to-[#E8EABC] bg-clip-text">
+            Developers and designers
+          </h3>
+          <div className="grid items-center justify-center grid-cols-1 gap-6 mx-auto mt-4 md:mt-8 md:grid-cols-2 lg:grid-cols-4 last:mb-2 last:md:mb-0">
             <PhotoCard
               name="Mudassir Khan"
               companyname="Frontend Developer"
@@ -75,12 +90,12 @@ const page = () => {
               twitterurl="https://twitter.com/VinayBoggavarpu"
               imageurl={vinay}
             />
-           <PhotoCard
+            <PhotoCard
               name="Meghna Majumder "
               companyname="UX/UI Designer"
               linkedinurl="https://www.linkedin.com/in/meghna-majumder/"
               twitterurl="https://meghnamajumder.editorx.io/designs/blank-4"
-              imageurl={megna }
+              imageurl={megna}
             />
           </div>
         </section>

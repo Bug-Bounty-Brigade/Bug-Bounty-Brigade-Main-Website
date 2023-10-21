@@ -3,7 +3,11 @@ import PageLayout from "@/components/PageLayout";
 const Blog = () => {
   return (
     <PageLayout>
-      <p>Hello Blogs</p>
+      <div className="flex items-center justify-center min-h-screen">
+        <p className="text-2xl text-yellow-500">
+          Coming Soon
+        </p>
+      </div>
     </PageLayout>
   );
 };

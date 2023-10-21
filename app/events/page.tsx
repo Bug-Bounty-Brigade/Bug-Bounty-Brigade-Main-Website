@@ -7,6 +7,7 @@ import cybercrimeinvseting from "../assets/cybercrimeinvseting.png";
 import getstartedwithoscp from "../assets/getstartedwithoscp.png";
 import reflectedxss from "../assets/reflectedxss.png";
 import web3andbugbounty from "../assets/web3andbugbounty.png";
+import FABypassauthentication from "../assets/2FABypassauthentication.png";
 interface EventPosts {
   image: any;
   date: string;
@@ -17,6 +18,14 @@ interface EventPosts {
 
 const events: EventPosts[] = [
   {
+    image: FABypassauthentication,
+    date: "Sat, Oct 21, 2023, 7.30PM IST",
+    title: "2FA Bypass in Authentication",
+    description:
+      "Join us on October 21st at 7:30 PM as Aditya dives deep into the world of 2FA bypass in authentication. This is your chance to enhance your cybersecurity skills and stay updated on the latest techniques.",
+    attendeesCount: "Aditya Shende | 122 attendees",
+  },
+  {
     image: reflectedxss,
     date: "Wed, Jun 28, 2023, 10.30am",
     title: "Reflected XSS And Bypasses",
@@ -25,7 +34,7 @@ const events: EventPosts[] = [
     attendeesCount: "Shiv Pratap Singh | 122 attendees",
   },
   {
-    image:cvehunting,
+    image: cvehunting,
     date: "Wed, Jun 28, 2023, 10.30am",
     title: "CVE Hunting on Programs",
     description:
@@ -33,7 +42,7 @@ const events: EventPosts[] = [
     attendeesCount: "SANJAY SINGH | 132 attendees",
   },
   {
-    image:getstartedwithoscp,
+    image: getstartedwithoscp,
     date: "Wed, Jun 28, 2023, 10.30am",
     title: "How to get started with OSCP",
     description:
@@ -53,14 +62,14 @@ const events: EventPosts[] = [
     date: "Wed, Jun 28, 2023, 10.30am",
     title: "Web3 and Bug Bounties",
     description:
-    "🙌 Gratitude to Our Speaker, Rudra Singh for an Enlightening Session! 🎉We extend our heartfelt thanks to Rudra Singh for sharing his invaluable insights and expertise during our session on Web3 and Bug Bounties" +
-    " Rudra's profound knowledge and passion for cybersecurity illuminated our understanding of these intricate subjects. His dedication to the Bug Bounty Brigade community has truly enriched our learning experience",
+      "🙌 Gratitude to Our Speaker, Rudra Singh for an Enlightening Session! 🎉We extend our heartfelt thanks to Rudra Singh for sharing his invaluable insights and expertise during our session on Web3 and Bug Bounties" +
+      " Rudra's profound knowledge and passion for cybersecurity illuminated our understanding of these intricate subjects. His dedication to the Bug Bounty Brigade community has truly enriched our learning experience",
     attendeesCount: "Rudra Singh | 122 attendees",
   },
   {
     image: cybercrimeinvseting,
     date: "Wed, Jun 28, 2023, 10.30am",
-    title: "cybercrime investigation using OSINT and dark web operations", 
+    title: "cybercrime investigation using OSINT and dark web operations",
     description:
       "As the Team Leader at Trinity Infotech Solutions, Ashwin Ragav is dedicated to harnessing the power of Open Source Intelligence (OSINT) techniques for effective cybercrime investigation. His insights promise to shed light on innovative approaches to gather and analyze digital footprints, bolstering our defense against modern cyber threats.",
     attendeesCount: "Ashwin Ragav | 122 attendees",
@@ -99,7 +108,7 @@ const Events = () => {
             <p className="neutral text-[24px] font-[700]">{event.title}</p>
             <p className="text-[18px] text-color text-blue-950 font-semibold">{event.description}</p>
             <p className="text-[18px] text-color font-bold ">{event.attendeesCount}</p>
-            
+
           </div>
         ))}
       </div>
