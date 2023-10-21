@@ -8,6 +8,11 @@ import getstartedwithoscp from "../assets/getstartedwithoscp.png";
 import reflectedxss from "../assets/reflectedxss.png";
 import web3andbugbounty from "../assets/web3andbugbounty.png";
 import FABypassauthentication from "../assets/2FABypassauthentication.png";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Bug Bounty Brigade - Events",
+  description: "Join the Latest Events in Bug Bounty Brigade",
+};
 interface EventPosts {
   image: any;
   date: string;
