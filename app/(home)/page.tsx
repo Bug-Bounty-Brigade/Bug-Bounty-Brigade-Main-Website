@@ -47,7 +47,7 @@ const iconGroup: IconDetails[] = [
     link: "https://github.com/Bug-Bounty-Brigade",
     iconName: "github",
   },
-  
+
   {
     icon: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
@@ -59,13 +59,13 @@ const iconGroup: IconDetails[] = [
     iconName: "telegram",
 
   },
-  
+
   {
     icon: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
     iconName: "instagram",
   },
-  
+
 ];
 
 export default function Home() {
@@ -146,33 +146,33 @@ export default function Home() {
           </div>
 
 
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
-              {iconGroup.map((icon, index) => (
-                <div
-                  key={index}
-                  className=" flex items-center justify-center w-full rounded-[24px] mx-auto max-w-[300px] bg-[#2f4f4f]"
-                >
-                <div className='w-full px-6 py-6'>  
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+            {iconGroup.map((icon, index) => (
+              <div
+                key={index}
+                className=" flex items-center justify-center w-full rounded-[24px] mx-auto max-w-[300px] bg-[#2f4f4f]"
+              >
+                <div className='w-full px-6 py-6'>
                   <div className="flex justify-center items-center  flex-col gap-9 lg:gap-20 mx-auto min-h-[100px] md:min-h-[227px]">
-                      <div className="text-[#EEB33B] ">
-                        {icon.icon}
-                      </div>
+                    <div className="text-[#EEB33B] ">
+                      {icon.icon}
                     </div>
-                   <a href={icon.link} target="_blank"> <p className="border-b w-fit cursor-pointer border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
-                      Join us on {icon.iconName}
-                    </p>
-                    </a>
                   </div>
+                  <a href={icon.link} target="_blank"> <p className="border-b w-fit cursor-pointer border-b-[#EEB33B] text-[#EEB33B] text-center mx-auto">
+                    Join us on {icon.iconName}
+                  </p>
+                  </a>
                 </div>
+              </div>
 
-              ))}
+            ))}
 
           </div>
         </div>
         <EventsHome />
         <div className="flex flex-col py-5 md:py-[40px]">
           <div className="flex flex-col gap-12">
-             <div className="flex flex-col items-start md:flex-row">
+            <div className="flex flex-col items-start md:flex-row">
               <div className="flex flex-col mx-auto md:mx-0 w-[90%] ">
                 <div className="flex flex-col w-[90%]">
                   <p className="text-xl font-bold md:text-2xl">Blogs</p>
@@ -205,7 +205,7 @@ export default function Home() {
                     alt="person photo"
                     className="w-full h-[13.5rem] object-cover mb-[20px] lg:mb-0 rounded-[20px]"
                   />
-                  <div className="flex flex-col gap-4 flex-grow justify-center sm:w-[80%]">
+                  <div className="flex flex-col justify-center flex-grow gap-4 ">
                     <h2 className="text-[20px] sm:text-[24px] neutral">
                       Lorem ipsum dolor sit amet consectetur adipiscing elit sed
                       do{" "}
@@ -222,7 +222,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-6">
                 <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6 bg-[#eeb33b]bg-gradient-radial">
-                  <div className="flex flex-col gap-4 w-full sm:w-[80%] md:pr-8 order-2 md:order-1">                    
+                  <div className="flex flex-col order-2 w-full gap-4 md:pr-8 md:order-1">
                     <h2 className="text-[20px] sm:text-[24px] neutral">
                       Lorem ipsum dolor sit amet consectetur adipiscing elit sed
                       do{" "}
@@ -245,7 +245,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-6 md:flex-row">
                   <div className="flex flex-col md:flex-row bg-card rounded-[20px] p-6">
-                    <div className="flex flex-col gap-4 sm:w-[80%]">
+                    <div className="flex flex-col gap-4 ">
                       <h2 className="text-[20px] sm:text-[24px] neutral">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit
                         sed do{" "}
@@ -260,7 +260,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex bg-card rounded-[20px] p-6">
-                    <div className="flex flex-col gap-4 sm:w-[80%]">
+                    <div className="flex flex-col gap-4 ">
                       <h2 className="text-[20px] sm:text-[24px] neutral">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit
                         sed do{" "}
