@@ -24,7 +24,7 @@ interface EventPosts {
 const events: EventPosts[] = [
   {
     image: FABypassauthentication,
-    date: "Sat, Oct 21, 2023, 7.30PM IST",
+    date: "Sat, Oct 21, 2023, 7:30PM IST",
     title: "2FA Bypass in Authentication",
     description:
       "Join us on October 21st at 7:30 PM as Aditya dives deep into the world of 2FA bypass in authentication. This is your chance to enhance your cybersecurity skills and stay updated on the latest techniques.",
@@ -32,7 +32,7 @@ const events: EventPosts[] = [
   },
   {
     image: reflectedxss,
-    date: "Wed, Jun 28, 2023, 10.30am",
+    date: "Sun, Oct 8, 2023, 5:00PM IST",
     title: "Reflected XSS And Bypasses",
     description:
       "🙌 A heartfelt thank you to our incredible speaker, Shiv Pratap Singh , for sharing his expertise on Reflected XSS And Bypasses. Your insights illuminated our Bug Bounty Brigade community!",
@@ -40,7 +40,7 @@ const events: EventPosts[] = [
   },
   {
     image: cvehunting,
-    date: "Wed, Jun 28, 2023, 10.30am",
+    date: "Sat, Sept 9, 2023, 6:00PM IST",
     title: "CVE Hunting on Programs",
     description:
       "🚀 The Session Concludes: A Resounding Triumph! 🌟The virtual halls of our recent session were buzzing with enthusiasm as the brilliant SANJAY SINGH shared his invaluable insights on CVE Hunting on Programs.🎙️ The excitement was palpable, and today, as the session comes to a close, we are left with a profound sense of satisfaction and gratitude.",
@@ -48,7 +48,7 @@ const events: EventPosts[] = [
   },
   {
     image: getstartedwithoscp,
-    date: "Wed, Jun 28, 2023, 10.30am",
+    date: "Sat, Jul 8, 2023, 10:00AM IST",
     title: "How to get started with OSCP",
     description:
       "Usman Shah shared his incredible journey of becoming an Offensive Security Certified Professional (OSCP). From exploring the value of OSCP to unlocking career opportunities, his insights provided valuable guidance for aspiring cybersecurity professionals.",
@@ -56,7 +56,7 @@ const events: EventPosts[] = [
   },
   {
     image: automationbounty,
-    date: "Wed, Jun 28, 2023, 10.30am",
+    date: "Sat, Jul 22, 2023, 6:00PM IST",
     title: "Automating Bug Bounty",
     description:
       "In this exciting session, esteemed speaker S Rahul a highly accomplished Cyber Security Analyst, and skilled Bug Bounty Hunter, delved into the secrets of automating bug bounty workflows. From privacy and data protection to penetration testing, Rahul's expertise in various cybersecurity domains enriched the session for both seasoned bug hunters and aspiring enthusiasts",
@@ -64,7 +64,7 @@ const events: EventPosts[] = [
   },
   {
     image: web3andbugbounty,
-    date: "Wed, Jun 28, 2023, 10.30am",
+    date: "Sun, Aug 20, 2023, 7:00PM IST",
     title: "Web3 and Bug Bounties",
     description:
       "🙌 Gratitude to Our Speaker, Rudra Singh for an Enlightening Session! 🎉We extend our heartfelt thanks to Rudra Singh for sharing his invaluable insights and expertise during our session on Web3 and Bug Bounties" +
@@ -73,7 +73,7 @@ const events: EventPosts[] = [
   },
   {
     image: cybercrimeinvseting,
-    date: "Wed, Jun 28, 2023, 10.30am",
+    date: "Sun, Aug 27, 2023, 7:00PM IST",
     title: "cybercrime investigation using OSINT and dark web operations",
     description:
       "As the Team Leader at Trinity Infotech Solutions, Ashwin Ragav is dedicated to harnessing the power of Open Source Intelligence (OSINT) techniques for effective cybercrime investigation. His insights promise to shed light on innovative approaches to gather and analyze digital footprints, bolstering our defense against modern cyber threats.",
