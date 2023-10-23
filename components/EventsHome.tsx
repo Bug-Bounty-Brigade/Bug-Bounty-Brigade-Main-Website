@@ -23,7 +23,7 @@ const EventsHome = () => {
             </div>
           </div>
           <div className="flex pt-[20px] md:pt-0 mx-auto md:mx-0 w-[90%] md:w-auto">
-            <Link href="/events"> <button className="flex w-[15.5rem] max-h-[3rem] items-center rounded-[100px] px-[40px] py-[10px] justify-between border border-[#E8EABB] neutral hover:bg-slate-800 transition-all ease-in-out delay-200 hover:text-white">
+            <Link href="/events"> <button className="flex w-[10.5rem] max-h-[3rem] items-center rounded-[100px] px-[40px] py-[10px] justify-between border border-[#E8EABB] neutral hover:bg-slate-800 transition-all ease-in-out delay-200 hover:text-white">
               View all <FiArrowUpRight />
             </button>
             </Link>
