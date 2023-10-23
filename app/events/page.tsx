@@ -11,6 +11,9 @@ import getstartedwithoscp from "../assets/getstartedwithoscp.png";
 import reflectedxss from "../assets/reflectedxss.png";
 import web3andbugbounty from "../assets/web3andbugbounty.png";
 import FABypassauthentication from "../assets/2FABypassauthentication.png";
+import reconeasyfindings from "../assets/reconeasyfindings.png";
+import anbughunter from "../assets/anbughunter.jpg";
+import nuclei from "../assets/nuclei.jpg";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bug Bounty Brigade - Events",
@@ -105,6 +108,30 @@ const events: EventPosts[] = [
     description:
       "Usman Shah shared his incredible journey of becoming an Offensive Security Certified Professional (OSCP). From exploring the value of OSCP to unlocking career opportunities, his insights provided valuable guidance for aspiring cybersecurity professionals.",
     attendeesCount: "Usman Shah | 122 attendees",
+  },
+  {
+    image: reconeasyfindings,
+    date: "Sat, Jul 15, 2023, 8:00PM IST",
+    title: "Recon & Easy Findings",
+    description:
+      "Jairam delved into the critical aspects of reconnaissance in bug bounty hunting, along with tips and techniques for uncovering easy findings. He shared practical insights gained from his extensive experience in the field, allowing you to enhance your bug-hunting capabilities.",
+    attendeesCount: "Jairam Dupati",
+  },
+  {
+    image: anbughunter,
+    date: "Sat, July 8, 2023, 7:30PM IST",
+    title: "An Bug Hunter's Approach to Finding Misconfigured Cloud Assets",
+    description:
+      "Bhagavan Bollina shared his approach to find misconfigured cloud assets, offering valuable insights and strategies that can help you uncover critical vulnerabilities.",
+    attendeesCount: "Bhagavan Bollina",
+  },
+  {
+    image: nuclei,
+    date: "Sun, Jun 18, 2023, 10:00PM IST",
+    title: "Nuclei For Bug Bounty",
+    description:
+      "Raju demonstrated practical proofs of concepts (PoCs) using Nuclei, making it an interactive and engaging experience.",
+    attendeesCount: "Raju Basak",
   },
 ];
 
