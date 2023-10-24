@@ -14,6 +14,9 @@ import FABypassauthentication from "../assets/2FABypassauthentication.png";
 import reconeasyfindings from "../assets/reconeasyfindings.png";
 import anbughunter from "../assets/anbughunter.jpg";
 import nuclei from "../assets/nuclei.jpg";
+import bugBounty101 from "../assets/bugBounty101.jpg";
+import lowHangingBug from "../assets/lowHangingBugs.jpg";
+import reconSeries from "../assets/reconSeries.jpg";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bug Bounty Brigade - Events",
@@ -126,6 +129,14 @@ const events: EventPosts[] = [
     attendeesCount: "Bhagavan Bollina",
   },
   {
+    image: lowHangingBug,
+    date: "Sun, Jul 8, 2023, 6:00PM IST",
+    title: "Low Hanging Bugs",
+    description:
+      "In this session, we will delve into the fundamentals of bug hunting, focusing on low-hanging fruits - easily discoverable vulnerabilities that are perfect for beginners. Led by our speaker, we will cover essential concepts, techniques, and tools to effectively identify and exploit these bugs.",
+    attendeesCount: "Shaikh Arif Ali",
+  },
+  {
     image: nuclei,
     date: "Sun, Jun 18, 2023, 10:00PM IST",
     title: "Nuclei For Bug Bounty",
@@ -133,6 +144,22 @@ const events: EventPosts[] = [
       "Raju demonstrated practical proofs of concepts (PoCs) using Nuclei, making it an interactive and engaging experience.",
     attendeesCount: "Raju Basak",
   },
+  {
+    image: reconSeries,
+    date: "Sat, Jun 10, 2023, 6:00PM IST",
+    title: "Bug Bounty & Recon Series",
+    description:
+      "In this session, Jairam will delve into the critical aspect of reconnaissance in bug bounty hunting. Learn valuable techniques and strategies to effectively gather information and identify potential vulnerabilities in target systems. Enhance your bug-hunting capabilities and gain practical insights from Jairam's experience in the field.",
+    attendeesCount: "Jairam Dupati",
+  },
+  {
+    image: bugBounty101,
+    date: "Mon, Jun 5, 2023, 10:00AM IST",
+    title: "Bug Bounty 101",
+    description:
+      "Shubham's contributions to the security community are commendable. He has reported more than 50 bugs to various companies, helping them strengthen their systems and protect user data. With his practical insights and real-life experiences, Shubham is undoubtedly the perfect mentor to guide us in our cybersecurity journey.",
+    attendeesCount: "Shubham Tiwari",
+  }
 ];
 
 const Events = () => {
