@@ -164,7 +164,7 @@ const Events = () => {
               className="max-h-[14.75rem] rounded-md hover:scale-110 transition duration-100 delay-200 ease-in-out"
             />
             <p className="text-color">{event.date}</p>
-            <p className="neutral text-[24px] font-[700]">{event.title}</p>
+            <h2 className="neutral text-[24px] font-[700]  heading">{event.title}</h2>
             <p className="text-[18px] text-color text-blue-950 font-semibold">{event.description}</p>
             <p className="text-[18px] text-color font-bold ">{event.attendeesCount}</p>
 
