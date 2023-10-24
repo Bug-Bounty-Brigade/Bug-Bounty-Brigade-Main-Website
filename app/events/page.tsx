@@ -62,7 +62,7 @@ const events: EventPosts[] = [
   {
     image: cybercrimeinvseting,
     date: "Sun, Aug 27, 2023, 7:00PM IST",
-    title: "cybercrime investigation using OSINT and dark web operations",
+    title: "Cybercrime investigation using OSINT and dark web operations",
     description:
       "As the Team Leader at Trinity Infotech Solutions, Ashwin Ragav is dedicated to harnessing the power of Open Source Intelligence (OSINT) techniques for effective cybercrime investigation. His insights promise to shed light on innovative approaches to gather and analyze digital footprints, bolstering our defense against modern cyber threats.",
     attendeesCount: "Ashwin Ragav | 122 attendees",
@@ -90,10 +90,10 @@ const events: EventPosts[] = [
   {
     image: getintocybersecurity,
     date: "Sat, Jul 29, 2023, 5:00PM IST",
-    title: "How to Get Into Cyber Security - Building your path and crafting an impactful resume",
+    title: "How to Get Into Cyber Security ",
     description:
       "Are you curious about breaking into the dynamic field of Cyber Security? Our esteemed Cyber Security Consultant, Sanjay Singh, will guide you on how to kickstart your journey and build a rewarding career in cybersecurity. In this session, you'll gain essential insights into starting your cybersecurity journey, crafting an impactful resume that stands out to recruiters, navigating certifications and skills to boost your employability, and acquiring practical experience and networking opportunities.",
-    attendeesCount: "Sanjay Singh| 46 attendees",
+    attendeesCount: "Sanjay Singh| 124 attendees",
     event_link: "https://youtu.be/E_k7yP3ua9w?si=SmeUpGcMGE6HCGBn"
   },
   {
@@ -148,6 +148,8 @@ const events: EventPosts[] = [
     description:
       "In this session, we will delve into the fundamentals of bug hunting, focusing on low-hanging fruits - easily discoverable vulnerabilities that are perfect for beginners. Led by our speaker, we will cover essential concepts, techniques, and tools to effectively identify and exploit these bugs.",
     attendeesCount: "Shaikh Arif Ali",
+    event_link: "https://www.youtube.com/@bugbountybrigade/videos"
+
   },
   {
     image: nuclei,
@@ -165,6 +167,8 @@ const events: EventPosts[] = [
     description:
       "In this session, Jairam will delve into the critical aspect of reconnaissance in bug bounty hunting. Learn valuable techniques and strategies to effectively gather information and identify potential vulnerabilities in target systems. Enhance your bug-hunting capabilities and gain practical insights from Jairam's experience in the field.",
     attendeesCount: "Jairam Dupati",
+    event_link: "https://www.youtube.com/@bugbountybrigade/videos"
+
   },
   {
     image: bugBounty101,
@@ -173,6 +177,8 @@ const events: EventPosts[] = [
     description:
       "Shubham's contributions to the security community are commendable. He has reported more than 50 bugs to various companies, helping them strengthen their systems and protect user data. With his practical insights and real-life experiences, Shubham is undoubtedly the perfect mentor to guide us in our cybersecurity journey.",
     attendeesCount: "Shubham Tiwari",
+    event_link: "https://www.youtube.com/@bugbountybrigade/videos"
+
   }
 ];
 
@@ -195,7 +201,7 @@ const Events = () => {
         {events.map((event, index) => (
           <div
             key={index}
-            className="bg-cardevents flex flex-col rounded-[24px] p-6 gap-2 md:gap-6"
+            className="relative bg-cardevents flex flex-col rounded-[24px] p-6 gap-2 md:gap-6 hover:shadow-2xl shadow-red-400 inset-0 shadowCard"
           >
             <Image
               src={event.image}
@@ -208,8 +214,8 @@ const Events = () => {
             <h2 className="neutral text-[24px] font-[700]  heading">{event.title}</h2>
             <p className="text-[18px] text-color text-blue-950 font-semibold">{event.description}</p>
             <p className="text-[18px] text-color font-bold ">{event.attendeesCount}</p>
-            <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href={event.event_link} target="_blank">
-                Join this event
+            <a className=" py-[12px]  px-[40px]  text-black text-center font-semibold hover:bg-yellow-600  bg-yellow-500 mt-4 rounded-xl   bg-gradient-to-r from-yellow-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300  tracking-wide transition ease-in-out duration-150  disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none" href={event.event_link} target="_blank">
+              Join this event
             </a>
           </div>
         ))}
