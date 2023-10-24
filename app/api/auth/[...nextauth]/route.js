@@ -15,7 +15,7 @@ const authOptions = {
         console.log(name)
         let fullname = name;
         try {
-          const res = await fetch("https://tabstacker-backend.onrender.com/user/googlesignin", {
+          const res = await fetch("https://bug-bounty-brigade-backend.onrender.com/user/googlesignin", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
