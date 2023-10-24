@@ -31,20 +31,20 @@ const Footer = () => {
               </h2>
             </div>
             <div className="grid grid-cols-4 gap-6 md:grid-cols-3 lg:grid-cols-8">
-              <a href="https://discord.gg/N73nyWdj" target="_blank"><BsDiscord className="icon-style" /></a>
-              <a href="https://github.com/Bug-Bounty-Brigade" target="_blank"><BsGithub className="icon-style" /></a>
-              <a href="https://twitter.com/BBB_GHC " target="_blank"><BsTwitter className="icon-style" /></a>
-              <a href="https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U" target="_blank"><BsYoutube className="icon-style" /></a>
-              <a href="https://t.me/Resources6969" target="_blank"><BsTelegram className="icon-style" /></a>
-              <a href="https://www.linkedin.com/company/bug-bounty-brigade/" target="_blank"><BsLinkedin className="icon-style" /></a>
-              <a href="https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==" target="_blank"><BsInstagram className="icon-style" /></a>
-              <a href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank"><BsWhatsapp className="icon-style" /></a>
+              <a href="https://discord.gg/N73nyWdj" target="_blank"><BsDiscord className="icon-style shadowCard" title="discord" /></a>
+              <a href="https://github.com/Bug-Bounty-Brigade" target="_blank"><BsGithub className="icon-style shadowCard" /></a>
+              <a href="https://twitter.com/BBB_GHC " target="_blank"><BsTwitter className="icon-style shadowCard" /></a>
+              <a href="https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U" target="_blank"><BsYoutube className="icon-style shadowCard" /></a>
+              <a href="https://t.me/Resources6969" target="_blank"><BsTelegram className="icon-style shadowCard" /></a>
+              <a href="https://www.linkedin.com/company/bug-bounty-brigade/" target="_blank"><BsLinkedin className="icon-style shadowCard" /></a>
+              <a href="https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==" target="_blank"><BsInstagram className="icon-style shadowCard" /></a>
+              <a href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank"><BsWhatsapp className="icon-style shadowCard" /></a>
             </div>
           </div>
           <hr className="my-5 border border-[#6C5B3F]" />
           <div className="flex flex-col justify-between w-full gap-4 md:flex-row">
             <p>© 2023 Bug Bounty Brigade All Rights Reserved</p>
-            <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
+            <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B] bg-gradient-to-r from-yellow-500 to-yellow-700 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
             </a>
           </div>

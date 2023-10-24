@@ -11,18 +11,18 @@ const Navbar = () => {
   const active = "text-[#EEB33B] font-[700]";
 
   return (
-    <div className="w-full flex py-4">
-      <nav className="w-full flex px-[10px] rounded-[100px] py-2 md:py-4" style={{background: 'linear-gradient(99deg,  #000, transparent  94%)'}}>
+    <div className="flex w-full py-4">
+      <nav className="w-full flex px-[10px] rounded-[100px] py-2 md:py-4" style={{ background: 'linear-gradient(99deg,  #000, transparent  94%)' }}>
 
         <div className="flex w-full">
-          <div className="flex w-full items-center justify-between">
-            <div className="flex gap-3 items-center">
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center gap-3">
               <Image
                 src="/mainlogo.png"
                 width={1000}
                 height={1000}
                 quality={100}
-                className="w-12 h-12 rounded-full object-cover"
+                className="object-cover w-12 h-12 rounded-full"
                 alt="logo"
               />
               <h2 className="text-[#EEB33B] text-[20px] font-[700]">
@@ -30,7 +30,7 @@ const Navbar = () => {
               </h2>
             </div>
             <MobileMenu className="lg:hidden" />
-            <ul className="hidden lg:flex gap-16 items-center">
+            <ul className="items-center hidden gap-16 lg:flex">
               <Link href="/" className={pathname === "/" ? active : ""}>
                 Home
               </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
               >
                 About us
               </Link>
-              <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
+              <a className="py-[12px] font-[400] px-[40px] rounded-full text-black text-center bg-[#EEB33B] bg-gradient-to-r from-yellow-500 to-yellow-700 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
                 Join our community
               </a>
             </ul>

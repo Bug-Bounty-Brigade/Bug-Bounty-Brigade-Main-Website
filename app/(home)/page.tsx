@@ -27,47 +27,47 @@ const iconGroup: IconDetails[] = [
   {
     icon: <BsWhatsapp className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM",
-    iconName: "whatsapp",
+    iconName: "Whatsapp",
 
   },
   {
     icon: <BsLinkedin className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://www.linkedin.com/company/bug-bounty-brigade/",
-    iconName: "linkedin",
+    iconName: "Linkedin",
 
   },
   {
     icon: <BsTwitter className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://twitter.com/BBB_GHC",
-    iconName: "twitter",
+    iconName: "X(Twitter)",
   },
   {
     icon: <BsDiscord className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://discord.gg/N73nyWdj",
-    iconName: "discord",
+    iconName: "Discord",
   },
   {
     icon: <BsGithub className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://github.com/Bug-Bounty-Brigade",
-    iconName: "github",
+    iconName: "GitHub",
   },
 
   {
     icon: <BsYoutube className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://youtube.com/@bugbountybrigade?si=7gc17nT4Xvqxr33U",
-    iconName: "youtube",
+    iconName: "Youtube",
   },
   {
     icon: <BsTelegram className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://t.me/Resources6969",
-    iconName: "telegram",
+    iconName: "Telegram",
 
   },
 
   {
     icon: <BsInstagram className="w-[5.25rem] h-[5.25rem]" />,
     link: "https://instagram.com/bugbountybrigade?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
-    iconName: "instagram",
+    iconName: "Instagram",
   },
 
 ];
@@ -96,7 +96,7 @@ export default function Home() {
               potential threats.
             </p>
             <p> Are you ready to harness your skills and make a real impact?</p>
-            <a className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px]" href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
+            <a className="flex items-center justify-center gap-1 btn max-w-[17.5rem] w-full py-[10px] bg-gradient-to-r from-yellow-700 to-yellow-300 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none " href="https://chat.whatsapp.com/IoJp03EGpe5A9ybvbo6VIM" target="_blank">
               Join our community
               <FiArrowUpRight />
             </a>
@@ -158,7 +158,7 @@ export default function Home() {
               >
                 <div className='w-full px-6 py-6'>
                   <div className="flex justify-center items-center  flex-col gap-9 lg:gap-20 mx-auto min-h-[100px] md:min-h-[227px]">
-                    <div className="text-[#EEB33B] ">
+                    <div className="text-[#EEB33B] shadowCard rounded-2xl p-2 md:p-4  ">
                       {icon.icon}
                     </div>
                   </div>

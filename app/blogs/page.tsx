@@ -22,7 +22,7 @@ const Blog = () => {
             <input type="text" className=" w-full bg-[#6C5B3F] rounded-full p-4 pl-12" placeholder="Search blogs by topic, author " />
             <Image src={search} width={20} height={20} alt="search icon" className="absolute top-5 left-4" />
           </div>
-          <Link href="/blogs/createpost"> <button className="p-2 border border-red-300 rounded-xl bg-stone-500 text-[#EEB33B] font-bold hover:bg-stone-600">Create</button> </Link>
+          <Link href="/blogs/createpost"> <button className="p-2 font-bold tracking-wide text-black transition duration-150 ease-in-out border border-red-300 rounded-xl bg-stone-500 hover:bg-stone-600 bg-gradient-to-r from-yellow-500 to-yellow-700 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none">Create Post</button> </Link>
         </div>
       </section>
     </PageLayout>
