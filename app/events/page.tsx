@@ -201,7 +201,7 @@ const Events = () => {
         {events.map((event, index) => (
           <div
             key={index}
-            className="relative bg-cardevents flex flex-col rounded-[24px] p-6 gap-2 md:gap-6 hover:shadow-2xl shadow-red-400 inset-0 shadowCard"
+            className="relative bg-cardevents flex flex-col rounded-[24px] p-6 gap-2 md:gap-4 hover:shadow-2xl shadow-red-400 inset-0 shadowCard"
           >
             <Image
               src={event.image}
@@ -210,7 +210,7 @@ const Events = () => {
               height={1000}
               className="max-h-[14.75rem] rounded-md hover:scale-110 transition duration-100 delay-200 ease-in-out"
             />
-            <p className="text-color">{event.date}</p>
+            <p className=" text-color">{event.date}</p>
             <h2 className="neutral text-[24px] font-[700]  heading">{event.title}</h2>
             <p className="text-[18px] text-color text-blue-950 font-semibold">{event.description}</p>
             <p className="text-[18px] text-color font-bold ">{event.attendeesCount}</p>

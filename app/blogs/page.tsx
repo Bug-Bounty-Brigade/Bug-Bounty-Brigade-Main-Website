@@ -17,8 +17,8 @@ const Blog = () => {
         <p className="text-lg ">
           Dive into a world of hacking revelations, vulnerability discovery, and cutting-edge threat mitigation. Explore our thought-provoking articles, practical tips, and expert perspectives to stay ahead in the ever-evolving digital security landscape.
         </p>
-        <div className="flex items-center justify-center gap-4 mt-8">
-          <div className="relative w-9/12">
+        <div className="flex flex-col items-center justify-center gap-4 mt-8 md:flex-row">
+          <div className="relative md:w-9/12">
             <input type="text" className=" w-full bg-[#6C5B3F] rounded-full p-4 pl-12" placeholder="Search blogs by topic, author " />
             <Image src={search} width={20} height={20} alt="search icon" className="absolute top-5 left-4" />
           </div>

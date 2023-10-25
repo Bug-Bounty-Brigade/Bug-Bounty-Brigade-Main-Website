@@ -11,9 +11,8 @@ const Navbar = () => {
   const active = "text-[#EEB33B] font-[700]";
 
   return (
-    <div className="flex w-full py-4">
+    <header className="flex w-full py-4">
       <nav className="w-full flex px-[10px] rounded-[100px] py-2 md:py-4" style={{ background: 'linear-gradient(99deg,  #000, transparent  94%)' }}>
-
         <div className="flex w-full">
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center gap-3">
@@ -35,19 +34,19 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href="events"
+                href="/events"
                 className={pathname.includes("events") ? active : ""}
               >
                 Events
               </Link>
               <Link
-                href="blogs"
+                href="/blogs"
                 className={pathname.includes("blogs") ? active : ""}
               >
                 Blogs
               </Link>
               <Link
-                href="about"
+                href="/about"
                 className={pathname.includes("about") ? active : ""}
               >
                 About us
@@ -59,7 +58,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

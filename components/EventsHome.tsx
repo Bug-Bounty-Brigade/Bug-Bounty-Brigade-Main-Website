@@ -15,7 +15,7 @@ const EventsHome = () => {
               <p className="heading mt-3 text-[27px] sm:text-[36px] font-[700]">
                 Stay Updated with Our Latest Events and Webinars
               </p>
-              <p className="mt-6 text-color">
+              <p className="mt-2 text-color">
                 Our expert contributors share valuable information,
                 practical tips, and real-life experiences to help you with
                 your career.
@@ -32,7 +32,7 @@ const EventsHome = () => {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 ">
           {/* Cards Here */}
           <div className="flex flex-grow w-full">
-            <div className="bg-card  w-full flex flex-col justify-between rounded-[24px] p-6">
+            <div className="bg-card  w-full flex flex-col justify-between rounded-[24px] p-6 shadowCard">
               <Image
                 src={reflectedxss}
                 width={1000}
@@ -40,21 +40,20 @@ const EventsHome = () => {
                 alt="person photo"
                 className="w-full h-[20rem]  mb-[20px] lg:mb-0 rounded-[20px]"
               />
-              <div className="flex flex-col justify-center flex-grow gap-4 ">
-                <h2 className="text-[20px] sm:text-[24px] neutral">
+              <div className="flex flex-col justify-center flex-grow ">
+                <h2 className="text-[20px] sm:text-[24px] neutral heading">
                   Reflected XSS And Bypasses
                 </h2>
                 <p className="text-color">
                   A heartfelt thank you to our incredible speaker, Shiv Pratap Singh , for sharing his expertise on Reflected XSS And Bypasses. Your insights illuminated our Bug Bounty Brigade community. We are grateful for your time and effort.
                 </p>
-
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-6">
-            <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6 bg-[#eeb33b]bg-gradient-radial">
+            <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6 bg-[#eeb33b] bg-gradient-radial shadowCard">
               <div className="flex flex-col order-2 w-full gap-4 md:pr-8 md:order-1">
-                <h2 className="text-[20px] sm:text-[24px] neutral">
+                <h2 className="text-[20px] sm:text-[24px] neutral heading">
                   CVE Hunting on Programs
                 </h2>
                 <p className="text-color">
@@ -73,7 +72,7 @@ const EventsHome = () => {
             <div className="flex flex-col gap-6 md:flex-row">
               <div className="flex flex-col md:flex-row bg-card rounded-[20px] p-6">
                 <div className="flex flex-col gap-4 ">
-                  <h2 className="text-[20px] sm:text-[24px] neutral">
+                  <h2 className="text-[20px] sm:text-[24px] neutral heading">
                     How to get started with OSCP
                   </h2>
                   <p className="text-color">
@@ -84,7 +83,7 @@ const EventsHome = () => {
               </div>
               <div className="flex bg-card rounded-[20px] p-6">
                 <div className="flex flex-col gap-4 ">
-                  <h2 className="text-[20px] sm:text-[24px] neutral">
+                  <h2 className="text-[20px] sm:text-[24px] neutral heading">
                     Automating Bug Bounty
                   </h2>
                   <p className="text-color">
