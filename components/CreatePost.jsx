@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/react'
 import SignInCompoment from "./client/SignInComponent";
@@ -8,31 +8,71 @@ import { redirect } from 'next/dist/server/api-utils';
 const CreatePost = () => {
     const { status, data: session } = useSession();
     const [imagePreview, setImagePreview] = useState('');
+    const [loading, setLoading] = useState(false);
     // title
     const [title, setTitle] = useState('');
     // body
     const [body, setbody] = useState('');
     // image
     const [image, setImage] = useState('');
-    const handleImageChange = (event) => {
-        const file = event.target.files[0];
-
-        if (file) {
-            const blob = new Blob([file], { type: file.type });
-            setImagePreview(URL.createObjectURL(blob));
-            console.log(URL.createObjectURL(blob));
-        } else {
-            setImagePreview('');
+    const handleImageChange = (pic) => {
+        if (pic == "undefined") {
+            console.log('no image selected')
+            return;
+        }
+        if (pic.size > 1024 * 1024 * 2) {
+            console.log('image size too big')
+            return;
+        }
+        if (pic.type !== 'image/jpeg' && pic.type !== 'image/png') {
+            console.log('image type not supported')
+            return;
+        }
+        if (pic.type == 'image/jpeg' || pic.type == 'image/png') {
+            const data = new FormData();
+            data.append("file", pic);
+            data.append("upload_preset", "bugbounty");
+            data.append("cloud_name", "dskif2lcs");
+            fetch("https://api.cloudinary.com/v1_1/dskif2lcs/image/upload", {
+                method: "post",
+                body: data,
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    setImage(data.url.toString());
+                    console.log(data.url.toString());
+                    setLoading(false);
+                })
+                .catch((err) => {
+                    console.log(err);
+                    setLoading(false);
+                });
         }
     };
     const handleSubmit = async (event) => {
         event.preventDefault();
         console.log('submit');
-        console.log(
-            title,
-            body,
-        )
 
+        try {
+            const res = await fetch('http://localhost:3000/userBlogData/upload/6537529cd13198eb05d5ac83', {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(
+                    {
+                        "title": "fgdf Title",
+                        "body": "This is a sample blog post.",
+                        "imageUrl": "https://example.com/sample-image.jpg"
+                    }
+
+                ),
+            })
+        }
+        catch (err) {
+            console.log(err);
+        }
     };
 
     return (
@@ -59,7 +99,7 @@ const CreatePost = () => {
                             alt="user image"
                         />
                     </div>
-                    <form onSubmit={handleSubmit} action="https://bug-bounty-brigade-backend.onrender.com/userBlogData/upload/6525152e7c01b579fa067ec7" method="POST" encType="multipart/form-data">
+                    <form onSubmit={handleSubmit} >
                         {/* input title */}
                         <div className="flex flex-col gap-2 p-4">
                             <label htmlFor="title" className='text-xl'>Title</label>
@@ -85,7 +125,7 @@ const CreatePost = () => {
                         {/* input image */}
                         <div className="flex flex-col gap-2 p-4">
                             <label htmlFor="photo" className='text-xl'>Image</label>
-                            <input type="file" name="photo" id="photo" className='rounded-md ' onChange={handleImageChange} />
+                            <input type="file" name="photo" accept='image/*' id="photo" className='rounded-md ' onChange={(e) => handleImageChange(e.target.files[0])} />
                             {imagePreview && <Image src={imagePreview} alt="image preview" width={400} height={400} className="mt-2 bg-contain rounded-md " style={{ maxWidth: '100%' }} />}
                         </div>
                         {/* input submit */}
