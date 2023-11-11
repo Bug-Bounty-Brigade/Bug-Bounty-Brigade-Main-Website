@@ -15,6 +15,43 @@ const CreatePost = () => {
     const [body, setbody] = useState('');
     // image
     const [image, setImage] = useState('');
+    if (session) {
+        console.log(session.user.name);
+        let fullname = session.user.name;
+        try {
+            fetch("http://localhost:3000/api/user/googlesignin", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    fullname: session.user.name,
+                    email: session.user.email,
+                }),
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data);
+                })
+
+            if (data.token) {
+                // Access the token from the response data
+                const token = data.token;
+                console.log("Token:", token);
+                if (res.ok) {
+                    // If response status code is OK (200)
+                    // set data to the response body
+                    // and return it
+                }
+                // Now you can use the token as needed in your frontend code
+            } else {
+                console.error("Token not found in the response");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     const handleImageChange = (pic) => {
         if (pic == "undefined") {
             console.log('no image selected')
