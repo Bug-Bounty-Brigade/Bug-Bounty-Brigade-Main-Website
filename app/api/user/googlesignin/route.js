@@ -17,9 +17,9 @@ export async function POST(request ,response) {
       }
       const token = await GoogleUser.GenerateToken(fullname, email);
       console.log(token)
-      return response.status(200).json({ message: "Token generated", token });
+      return Response.json({ message: "Token generated", token });
     } catch (error) {
-      console.error(error);
-      return response.status(500).json({ error: "Internal server error" });
+      console.error("user already exists");
+      return Response.json({ error: "Internal server error" });
     }
 }
