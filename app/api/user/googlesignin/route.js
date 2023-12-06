@@ -1,10 +1,12 @@
 import GoogleUser from "@/models/Googleuser";
-import {connect} from "@/dbConfig/dbConfig";
-
-
+import {connect} from "../../../../dbConfig.ts";
 connect()
-export async function POST(req) {
-    const { fullname, email } = req.body;
+export async function POST(request ,response) {
+  const res = await request.json()
+  console.log(res)
+    const { fullname, email } = res;
+    console.log(fullname, email)
+    console.log(res.fullname)
     try {
       const user = await GoogleUser.findOne({ email });
       if (!user) {
@@ -15,9 +17,9 @@ export async function POST(req) {
       }
       const token = await GoogleUser.GenerateToken(fullname, email);
       console.log(token)
-      return res.status(200).json({ message: "Token generated", token });
+      return Response.json({ message: "Token generated", token });
     } catch (error) {
-      console.error(error);
-      return res.status(500).json({ error: "Internal server error" });
+      console.error("user already exists");
+      return Response.json({ error: "Internal server error" });
     }
 }

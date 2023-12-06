@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, use } from 'react'
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/react'
 import SignInCompoment from "./client/SignInComponent";
@@ -15,6 +15,39 @@ const CreatePost = () => {
     const [body, setbody] = useState('');
     // image
     const [image, setImage] = useState('');
+    useEffect(() => {
+        if (session) {
+            console.log(session.user.name);
+            let fullname = session.user.name;
+            try {
+                fetch("http://localhost:3000/api/user/googlesignin", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        fullname: session.user.name,
+                        email: session.user.email,
+                    }),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (data.token) {
+                            // Access the token from the response data
+                            const token = data.token;
+                            console.log("Token:", token);
+                            localStorage.setItem("token", token);
+                        } else {
+                            console.error("Token not found in the response");
+                        }
+                    })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    }, [session])
+
     const handleImageChange = (pic) => {
         if (pic == "undefined") {
             console.log('no image selected')
@@ -52,26 +85,27 @@ const CreatePost = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         console.log('submit');
+        console.log(title, body, image)
+        const res = await fetch('http://localhost:3000/api/userBlogData/upload/6525152e7c01b579fa067ec7', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                title: title,
+                body: body,
+                imageUrl: image,
+            }),
+        })
+
+        const text = await res.text();
+        console.log(text);
 
         try {
-            const res = await fetch('http://localhost:3000/userBlogData/upload/6537529cd13198eb05d5ac83', {
-                method: 'POST',
-                mode: 'cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(
-                    {
-                        "title": "fgdf Title",
-                        "body": "This is a sample blog post.",
-                        "imageUrl": "https://example.com/sample-image.jpg"
-                    }
-
-                ),
-            })
-        }
-        catch (err) {
-            console.log(err);
+            const data = JSON.parse(text);
+            console.log(data);
+        } catch (err) {
+            console.error('Failed to parse JSON:', err);
         }
     };
 
