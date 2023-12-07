@@ -7,8 +7,8 @@ export async function POST(request, response,
   console.log(request)
   console.log(response)
   const res = await request.json()
-  const { title, body, imageUrl } = res;
-  console.log(title, body, imageUrl)
+  const { title, body, imageUrl,userImage } = res;
+  console.log(title, body, imageUrl,userImage)
   console.log(response.params)
   try {
     const userId = response.params.id;
@@ -31,6 +31,7 @@ export async function POST(request, response,
       userId: userId,
       title: title,
       body: body,
+      userImage: userImage,
     };
 
     console.log(obj);

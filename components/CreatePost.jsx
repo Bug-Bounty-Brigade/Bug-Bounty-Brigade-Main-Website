@@ -3,12 +3,13 @@ import React, { useState, useEffect, use } from 'react'
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/react'
 import SignInCompoment from "./client/SignInComponent";
-import { redirect } from 'next/dist/server/api-utils';
 
 const CreatePost = () => {
     const { status, data: session } = useSession();
     const [imagePreview, setImagePreview] = useState('');
     const [loading, setLoading] = useState(false);
+    // user image
+    const [userImage, setUserImage] = useState('');
     // title
     const [title, setTitle] = useState('');
     // body
@@ -18,7 +19,7 @@ const CreatePost = () => {
     useEffect(() => {
         if (session) {
             console.log(session.user.name);
-            let fullname = session.user.name;
+            setUserImage(session.user.image);
             try {
                 fetch("http://localhost:3000/api/user/googlesignin", {
                     method: "POST",
@@ -46,7 +47,7 @@ const CreatePost = () => {
                 console.log(error);
             }
         }
-    }, [session])
+    }, [])
 
     const handleImageChange = (pic) => {
         if (pic == "undefined") {
@@ -95,6 +96,7 @@ const CreatePost = () => {
                 title: title,
                 body: body,
                 imageUrl: image,
+                userImage: userImage,
             }),
         })
 

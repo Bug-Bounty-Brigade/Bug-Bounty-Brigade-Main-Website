@@ -11,6 +11,7 @@ const userBlogSchema = new mongoose.Schema({
   },
   title: String, // Add the title field for blog
   body: String, // Add the body field for blog
+  userImage : String,
 });
 
-module.exports = mongoose.model('userblog', userBlogSchema);
+module.exports = mongoose.models.userblog || mongoose.model('userblog', userBlogSchema);
