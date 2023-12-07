@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import search from "../assets/search.svg"
 import Link from "next/link";
+import ShowBlogs from "@/components/ShowBlogs";
 export const metadata: Metadata = {
   title: "Bug Bounty Brigade - Blogs",
   description: "See the latest blogs in Bug Bounty Brigade",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 const Blog = () => {
   return (
     <PageLayout>
-      <section className="w-full min-h-screen mx-auto">
+      <section className="w-full mx-auto">
         <h2 className="flex heading font-[700] text-[1.2rem] md:text-[36px] xl:text-[48px]">
           Discover Our Blogs to Unleash Cybersecurity Insights
         </h2>
@@ -25,6 +26,7 @@ const Blog = () => {
           <Link href="/blogs/createpost"> <button className="p-2 font-bold tracking-wide text-black transition duration-150 ease-in-out border border-red-300 rounded-xl bg-stone-500 hover:bg-stone-600 bg-gradient-to-r from-yellow-500 to-yellow-700 hover:bg-gradient-to-bl focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none">Create Post</button> </Link>
         </div>
       </section>
+      <ShowBlogs />
     </PageLayout>
   );
 };
