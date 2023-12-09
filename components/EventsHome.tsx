@@ -32,7 +32,7 @@ const EventsHome = () => {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 ">
           {/* Cards Here */}
           <div className="flex flex-grow w-full">
-            <div className="bg-card  w-full flex flex-col justify-between rounded-[24px] p-6 shadowCard">
+            <div className="bg-card  w-full flex flex-col justify-between rounded-[24px] p-6 ">
               <Image
                 src={reflectedxss}
                 width={1000}
@@ -51,7 +51,7 @@ const EventsHome = () => {
             </div>
           </div>
           <div className="flex flex-col gap-6">
-            <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6 bg-[#eeb33b] bg-gradient-radial shadowCard">
+            <div className="flex flex-wrap md:flex-nowrap bg-card rounded-[20px] p-6 bg-[#eeb33b] bg-gradient-radial ">
               <div className="flex flex-col order-2 w-full gap-4 md:pr-8 md:order-1">
                 <h2 className="text-[20px] sm:text-[24px] neutral heading">
                   CVE Hunting on Programs
