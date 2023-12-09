@@ -44,7 +44,11 @@ body {
 
 
 .bg-card{
-  background: radial-gradient(#005,#25161B);
+  background: rgba( 163, 34, 34, 0.15 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px dashed rgba( 255, 255, 255, 0.18 );
 }
 
 

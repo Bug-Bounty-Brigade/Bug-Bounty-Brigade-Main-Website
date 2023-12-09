@@ -1,5 +1,4 @@
 "use client"
-import { data } from 'autoprefixer'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 interface Blog {
@@ -14,7 +13,7 @@ const ShowBlogs = () => {
     const [blogs, setBlogs] = useState<Blog[]>([])
     useEffect(() => {
         try {
-            fetch('http://localhost:3000/api/userBlogData/fetchBlogs',
+            fetch('https://www.bugbountybrigade.tech/api/userBlogData/fetchBlogs',
                 {
                     method: 'GET',
                     headers: {

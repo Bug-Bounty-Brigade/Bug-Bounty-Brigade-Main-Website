@@ -21,7 +21,7 @@ const CreatePost = () => {
             console.log(session.user.name);
             setUserImage(session.user.image);
             try {
-                fetch("http://localhost:3000/api/user/googlesignin", {
+                fetch("https://www.bugbountybrigade.tech/api/user/googlesignin", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ const CreatePost = () => {
         event.preventDefault();
         console.log('submit');
         console.log(title, body, image)
-        const res = await fetch('http://localhost:3000/api/userBlogData/upload/6525152e7c01b579fa067ec7', {
+        const res = await fetch('https://www.bugbountybrigade.tech/api/userBlogData/upload/6525152e7c01b579fa067ec7', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
